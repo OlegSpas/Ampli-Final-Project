@@ -1,0 +1,46 @@
+.heroMain{
+    background: linear-gradient(112.86deg, #FFBF45 9.58%, #FF9C41 90.39%);
+}
+
+.heroContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    .heroOfferConstruction{
+        width: 36%;
+        // height:20%;
+        .heroOfferConstruction__title{
+            font-family: 'Montserrat Black';
+            font-size: 40px;
+            margin-bottom: 3%;
+        }
+        .heroOfferConstruction__subTitle{
+            font-family: 'Montserrat Medium';
+            font-size: 16px;
+            line-height: 27px;
+            margin-bottom: 9%;
+        }
+        .heroOfferConstruction__button{
+            outline:none;
+            cursor: pointer;
+            border:0;
+            border-radius: 5px;
+            background-color: #FF5C5C;
+            box-shadow: 0px 9px 50px 0px #ff615c4d;
+            height:65px;
+            width: 270px;
+            font-family: 'Montserrat Bold';
+            font-size: 20px;
+            line-height: 33px;
+            color:#fff;
+        }
+    }
+    .heroImage{
+        // position: relative;
+        // bottom: -22%;
+        .heroImage__img{
+
+        }
+    }
+}

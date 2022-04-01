@@ -1,0 +1,24 @@
+.header{
+    position: absolute;
+    width: 100%;
+    top: 3%;
+}
+
+.headerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .navbar-menu{
+        width: 45%;
+        .navbar-menu__list{
+            display: flex;
+            .navbar-menu__item{
+                margin-left:7% ;
+                .navbar-menu__link{
+                    text-decoration: none;
+                    font-family: 'Montserrat Medium';
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+.contactForm{
+    background-color: #000000;
+    padding:5% 0;
+}
+
+.contactForm__content{
+    .contactForm__title{
+        color: #fff;
+        margin-bottom: 3%;
+    }
+    .contactForm__main{
+        width: 50%;
+        max-width: 570px;
+        .formData{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .form__item{
+            .form__input{
+                outline: none;
+                background-color: transparent;
+                border: 0;
+                border-bottom: 1px solid #FFFFFF;
+                color:#fff;
+                height: 30px;
+                width: 270px;
+                margin-bottom: 11%;    
+                padding-bottom: 3%; 
+                font-family: 'Montserrat Regular';
+                font-size: 18px;
+                line-height: 22px;    
+                
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+            .form__textarea{
+                outline: none;
+                background-color: transparent;
+                border:0;
+                border-bottom: 1px solid #FFFFFF;
+                height: 110px;
+                width: 100%;
+                margin-bottom: 2%;
+                
+                font-family: 'Montserrat Regular';
+                font-size: 18px;
+                line-height: 22px;
+                color:#fff;
+                &::placeholder{
+                    color: #fff;
+                }
+            }
+            .checkbox{
+                margin-top: 1%;
+                .checkbox__label{
+                    cursor: pointer;
+                    font-family: 'Montserrat Regular';
+                    font-size: 14px;
+                    line-height: 18px;
+                    color: #999999;
+                    margin-left: 3%;
+                }
+            }
+        }
+        .formButton{
+            cursor: pointer;
+            outline: none;
+            border:0;
+            border-radius: 5px;
+            background-color: #FF5C5C;
+            color:#fff;
+            font-family: 'Montserrat Bold';
+            font-size: 18px;
+            line-height: 22px;
+            height:60px;
+            width: 250px;
+            margin-top: 7%;
+        }
+    }
+}

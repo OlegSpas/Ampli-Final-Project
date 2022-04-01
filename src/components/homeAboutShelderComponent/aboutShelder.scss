@@ -1,0 +1,39 @@
+.aboutShelder__Content{
+    padding: 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .aboutShelder__image{
+        img{
+            border-radius: 10px;
+        }
+    }
+    .aboutShelder__content{
+        max-width: 550px;
+        h2{
+            font-family: 'Montserrat ExtraBold';
+            font-size: 30px;
+            line-height: 37px;
+            margin-bottom: 5%;
+        }
+        p{
+            font-family: 'Montserrat Medium';
+            font-size: 16px;
+            line-height: 26px;
+            margin-top: 2%;
+        }
+        button{
+            margin-top: 2%;
+            cursor: pointer;
+            outline: none;
+            border:0;
+            background-color: transparent;
+            // height: 70px;
+            // width: 180px;
+            font-family: 'Montserrat Regular';
+            font-size: 18px;
+            line-height: 23px;
+            color:#FF5C5C;
+        }
+    }
+}

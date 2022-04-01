@@ -1,0 +1,19 @@
+{
+    "triggers":[
+        {
+            "title":"Причина взяти**",
+            "description":"Lorem ipsum text text text text text",
+            "color":"green"
+        },
+        {
+            "title":"Причина взяти**",
+            "description":"Lorem ipsum text text text text text",
+            "color":"red"
+        },
+        {
+            "title":"Причина взяти**",
+            "description":"Lorem ipsum text text text text text",
+            "color":"blue"
+        }
+    ]
+}
