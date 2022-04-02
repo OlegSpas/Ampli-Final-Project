@@ -1,10 +1,11 @@
 import React  from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { HOME } from './route/Routes';
+import { HOME, ABOUT } from './route/Routes';
 import Header from './components/header/header';
 import HomePage from './components/homePage/homePage';
-import './App.css';
 import Footer from './components/footer/footer';
+import AboutPage from './components/aboutPage/aboutPage';
+import './App.css';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path={HOME} component={HomePage} />
+        <Route path={ABOUT} component={AboutPage} />
       </Switch>
       <Footer/>
     </BrowserRouter>

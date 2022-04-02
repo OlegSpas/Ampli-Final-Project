@@ -40,10 +40,9 @@ export default function ContactForm() {
                             <div className="form__item">
                                 <div className="checkbox">
                                 <ReCAPTCHA
-                                    sitekey="3333"
+                                    sitekey="KEY"
                                     onChange={onChange}
-                                />
-
+                                /> 
                                 </div>
                             </div>
                         </div>
