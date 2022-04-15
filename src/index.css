@@ -66,6 +66,10 @@ code {
   margin: 0 auto;
 }
 
+.spaceBlock{
+  height: 150px;
+}
+
 h1,h2,h3,h4,h5.h6,p,a{
   color: #1c1c1c;
 }

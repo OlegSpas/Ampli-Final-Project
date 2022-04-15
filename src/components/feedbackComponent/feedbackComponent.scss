@@ -1,0 +1,62 @@
+.feedback__content{
+    margin-bottom: 5%;
+    .feedback__topContent{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .feedback__main{
+            width: 57%; 
+            .feedback__carousel{
+                padding: 13% 0;
+                .feedback__card{
+                    margin: 0% 1%;
+                    width: 570px;
+                    min-height: 284px;
+                    border-radius: 15px;
+                    box-shadow: 4px 3px 15px 0px #00000040;
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    .card__media{
+                        margin-left: 3%;
+                        img{
+                            -webkit-user-drag: none;
+                            width: 151px;
+                            height: 151px;
+                            border-radius: 300px;
+                            object-fit: cover;
+                        }
+                    }
+                    .card__content{
+                        width: 100%;
+                        padding: 0 10% 0% 5%;
+                        .cardHead{
+                            margin-bottom: 7%;
+                            .feedbackCard__title{
+                                font-family: 'Montserrat ExtraBold';
+                                font-size: 24px;
+                                line-height: 30px; 
+                            }
+                            .feedbackCard__achieve{
+                                font-family: 'Montserrat Medium';
+                                font-size: 14px;
+                                line-height: 18px;
+                            }
+                        }
+                        .feedbackCard__description{
+                            font-family: 'Montserrat Medium';
+                            font-size: 14px;
+                            line-height: 18px;                     
+                        }
+                    }
+                }
+                .react-multiple-carousel__arrow--left{
+                    left:calc(4% + 1px)!important;
+                }
+                .react-multiple-carousel__arrow--right{
+                    right:calc(4% + 1px)!important;
+                }
+            }
+        }
+    }
+}

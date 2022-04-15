@@ -1,36 +1,36 @@
 import React from 'react';
 import Carousel from "react-multi-carousel";
-import AdoptConditionsData from '../../fakeData/adoptConditionsData.json';
-import ConditionsCard from './conditionsCard';
-import './adoptConditions.scss';
+import FeedbackData from '../../fakeData/feedbacks.json';
+import FeedbackItem from './feedbackItem';
+import './feedbackComponent.scss';
 import "react-multi-carousel/lib/styles.css";
 
 
-export default function AdoptConditions() {
+export default function FeedbackComponent() {
 
   return (
 
-    <section className='adoptConditions'>
+    <section className='Feedback'>
         <div className="container">
-            <div className="adoptConditions__content">
-                <div className="adoptConditions__title">
-                    <h2>Умови адопції тварин</h2>
+            <div className="feedback__content">
+                <div className="feedback__title">
+                    <h2>Про нас говорять</h2>
                 </div>
-                <div className="adoptCondition__topContent">
-                    <div className="adoptConditions__main">
+                <div className="feedback__topContent">
+                    <div className="feedback__main">
                         <Carousel
                             // additionalTransfrom={0}
                             arrows
                             autoPlay
-                            autoPlaySpeed={7000}
+                            autoPlaySpeed={10000}
                             centerMode={false} // Чи показувати частинки попередніх\наступних карток
-                            className="adopt__carousel"
+                            className="feedback__carousel"
                             containerClass="container-with-dots" // додатковий клас
                             dotListClass="" // cтилізація списку точок
                             draggable={true} // чи можна скролити на ПК
                             focusOnSelect={false} // при кліку зробити слайд поточним
                             infinite
-                            itemClass="condition__card"
+                            itemClass="feedback__card"
                             keyBoardControl
                             minimumTouchDrag={80} // скільки треба проскролити
                             renderButtonGroupOutside={false}
@@ -41,7 +41,7 @@ export default function AdoptConditions() {
                                     max: 3000,
                                     min: 1024
                                 },
-                                items: 3,
+                                items: 1,
                                 partialVisibilityGutter: 40
                                 },
                                 mobile: {
@@ -57,7 +57,7 @@ export default function AdoptConditions() {
                                     max: 1024,
                                     min: 464
                                 },
-                                items: 2,
+                                items: 1,
                                 partialVisibilityGutter: 30
                                 }
                             }}
@@ -66,8 +66,8 @@ export default function AdoptConditions() {
                             slidesToSlide={1}
                             swipeable
                             >
-                                {AdoptConditionsData.conditions.map((item, index) => (
-                                    <ConditionsCard key={index} {...item}/>
+                                {FeedbackData.feedbacks.map((item, index) => (
+                                    <FeedbackItem key={index} {...item}/>
                                 ))}
                         </Carousel>
                     </div>
