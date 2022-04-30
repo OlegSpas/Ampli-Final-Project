@@ -1,0 +1,112 @@
+{
+    "blogs":[
+        {
+            "id":0,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"care"
+        },
+        {
+            "id":1,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"care"
+        },
+        {
+            "id":2,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"care"
+        },
+        {
+            "id":3,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"news"
+        },
+        {
+            "id":4,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"care"
+        },
+        {
+            "id":5,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"success"
+        },
+        {
+            "id":6,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"care"
+        },
+        {
+            "id":7,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"success"
+        },
+        {
+            "id":8,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"report"
+        },
+        {
+            "id":9,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"report"
+        },
+        {
+            "id":9,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"report"
+        },
+        {
+            "id":10,
+            "title":"Чому потрібно відвідувати ветеринара?",
+            "description":"mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis ",
+            "date":"1 бер. 2022",
+            "link":"#",
+            "image":"img",
+            "blogType":"report"
+        }
+    ]
+}

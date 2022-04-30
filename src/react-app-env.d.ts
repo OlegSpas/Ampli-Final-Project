@@ -8,3 +8,8 @@ interface INavbarButton {
 	buttonText: string;
 	path:string;
 }
+
+interface IBlogButton{
+	buttonText: string;
+	buttonValue: string;
+}
