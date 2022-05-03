@@ -6,6 +6,7 @@ import HomePage from './components/homePage/homePage';
 import Footer from './components/footer/footer';
 import AboutPage from './components/aboutPage/aboutPage';
 import BlogListPage from './components/blogListPage/blogListPage';
+import BlogPage from './components/blogPage/blogPage';
 import './App.css';
 
 
@@ -18,6 +19,8 @@ function App() {
       <Switch>
         <Route exact path={HOME} component={HomePage} />
         <Route path={ABOUT} component={AboutPage} />
+        <Route path={`${BLOG}/:id`} component={BlogPage}/> 
+        {/* ЗАПИТАТИСЬ ЗА РОЗМІЩЕННЯ ЧОМУ ЯКЩО БЛОГ АЙДІ НИЖЧЕ, ТО НЕ ПРАЦЮЄ */}
         <Route path={BLOG} component={BlogListPage} />
       </Switch>
       <Footer/>
