@@ -3,38 +3,43 @@ import petDog from '../../images/petDog.jpg'
 import './homePetsListComponent.scss';
 
 interface IProps{
-    name:string;
-    age:string;
-    sex:string;
-    size:string;
-    type:string;
+    pet:{
+        id:number;
+        name:string;
+        age:string;
+        sex:string;
+        size:string;
+        type:string;
+    }
 }
 
 
 export default function PetsCard(props:IProps) {
 
+    const { id, name, age, sex, size, type } = props.pet
+
   return (
     <div className="petCard">
         <div className="petCard__image">
-            <img src={petDog} alt={props.type} />
+            <img src={petDog} alt={type} />
         </div>
         <div className="petCard__content">
-            <h3 className='petCard__title'>{props.name}</h3>
+            <h3 className='petCard__title'>{name}</h3>
             <div className="petCard__item">
                 <p>Вид</p>
-                <p>{props.type}</p>
+                <p>{type}</p>
             </div>
             <div className="petCard__item">
                 <p>Стать</p>
-                <p>{props.sex}</p>
+                <p>{sex}</p>
             </div>
             <div className="petCard__item">
                 <p>Вік</p>
-                <p>{props.age}</p>
+                <p>{age}</p>
             </div>
             <div className="petCard__item">
                 <p>Розмір</p>
-                <p>{props.size}</p>
+                <p>{size}</p>
             </div>
             <div className="petCard__action">
                 <button className="petCard__button">

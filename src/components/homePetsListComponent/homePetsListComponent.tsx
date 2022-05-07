@@ -14,15 +14,8 @@ export default function HomePetsListComponent() {
                     <h2>Наші хвостики</h2>
                 </div>
                 <div className="homePetsComponent__list">
-                    {PetsData.pets.map((card:any, index:number) =>(
-                            <PetsCard
-                                key={index}
-                                name={card.name}
-                                age={card.age}
-                                sex={card.sex}
-                                size={card.size}
-                                type={card.type}
-                            />
+                    {PetsData.pets.map((pet:any, index:number) =>(
+                            <PetsCard key={index} pet={pet}/>
                     ))}
                 </div>
                 <div className="homePetsComponent__action">

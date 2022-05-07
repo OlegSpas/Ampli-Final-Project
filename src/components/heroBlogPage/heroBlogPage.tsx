@@ -6,7 +6,7 @@ import './heroBlogPage.scss'
 export default function HeroBlogPage() {
 
   return (
-      <section className='HeroBlog'>
+      <section id='HeroBlog'>
           <div className="container">
               <div className="heroBlog__content">
                     <h1 className="heroBlog__title">

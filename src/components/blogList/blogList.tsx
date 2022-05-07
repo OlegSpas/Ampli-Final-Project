@@ -2,7 +2,7 @@ import React from 'react';
 import BlogData from '../../fakeData/blogListData.json';
 import BlogListItem from './blogListItem';
 import BlogListButtons from './blogListButtons';
-import './blogList.scss'
+import './blogList.scss';
 
 
 

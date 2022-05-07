@@ -1,12 +1,13 @@
 import React  from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import { HOME, ABOUT, BLOG } from './route/Routes';
+import { HOME, ABOUT, BLOG, ADOPTION } from './route/Routes';
 import Header from './components/header/header';
 import HomePage from './components/homePage/homePage';
 import Footer from './components/footer/footer';
 import AboutPage from './components/aboutPage/aboutPage';
 import BlogListPage from './components/blogListPage/blogListPage';
 import BlogPage from './components/blogPage/blogPage';
+import PetsListPage from './components/petsListPage/petsListPage';
 import './App.css';
 
 
@@ -22,6 +23,8 @@ function App() {
         <Route path={`${BLOG}/:id`} component={BlogPage}/> 
         {/* ЗАПИТАТИСЬ ЗА РОЗМІЩЕННЯ ЧОМУ ЯКЩО БЛОГ АЙДІ НИЖЧЕ, ТО НЕ ПРАЦЮЄ */}
         <Route path={BLOG} component={BlogListPage} />
+        {/* <Route path={`${BLOG}/:id`} component={BlogPage}/>  */}
+        <Route path={ADOPTION} component={PetsListPage}/>
       </Switch>
       <Footer/>
     </BrowserRouter>

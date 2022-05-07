@@ -29,3 +29,12 @@ interface IBlog  {
 		paragraph:string;
 	}[];
 }  
+
+interface IPetSelect 	{
+	selectName: string,
+	valueName:string;
+	selectValues: {
+		petValue:string;
+		text: string;
+	}[];
+}
