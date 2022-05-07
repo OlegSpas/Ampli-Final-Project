@@ -1,4 +1,4 @@
-import { HOME, ABOUT, HELP, BLOG} from "./Routes"
+import { HOME, ABOUT, HELP, BLOG, ADOPTION} from "./Routes"
 
 export const Routes: INavbarButton[] = [
 	{
@@ -8,6 +8,10 @@ export const Routes: INavbarButton[] = [
 	{
 		buttonText: 'Про нас',
 		path: ABOUT
+	},
+	{
+		buttonText: 'Наші хвостаті',
+		path: ADOPTION
 	},
 	{
 		buttonText: 'Допомога',
