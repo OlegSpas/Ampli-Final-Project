@@ -6,7 +6,22 @@
             "age":"1 рік",
             "sex":"Хлопчик",
             "size":"Малий",
-            "type":"Кіт"
+            "type":"Кіт",
+            "petDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "images": [
+                {
+                    "image": "https://petsi.net/images/dogbreed/pomeranian.jpg"
+                },
+                {
+                    "image": "https://tva.ua/wp-content/uploads/2020/12/10-sobaka-shpits.jpg"
+                },
+                {
+                    "image": "https://faunistics.com/wp-content/uploads/2019/02/1-4.jpg"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLjqCCsDg8qGXlyQmdmsT0cxx2vTNDlXA5ItTnOhkftOIXo84qG1vCkcH1wmS1tcDGVk&usqp=CAU"
+                }
+            ]
         },
         {
             "id":1,
@@ -14,7 +29,22 @@
             "age":"1 рік",
             "sex":"Хлопчик",
             "size":"Великий",
-            "type":"Собака"
+            "type":"Собака",
+            "petDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "images": [
+                {
+                    "image": "https://petsi.net/images/dogbreed/pomeranian.jpg"
+                },
+                {
+                    "image": "https://tva.ua/wp-content/uploads/2020/12/10-sobaka-shpits.jpg"
+                },
+                {
+                    "image": "https://faunistics.com/wp-content/uploads/2019/02/1-4.jpg"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLjqCCsDg8qGXlyQmdmsT0cxx2vTNDlXA5ItTnOhkftOIXo84qG1vCkcH1wmS1tcDGVk&usqp=CAU"
+                }
+            ]
         },
         {
             "id":2,
@@ -22,7 +52,22 @@
             "age":"1 рік",
             "sex":"Дівчинка",
             "size":"Малий",
-            "type":"Собака"
+            "type":"Собака",
+            "petDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "images": [
+                {
+                    "image": "https://petsi.net/images/dogbreed/pomeranian.jpg"
+                },
+                {
+                    "image": "https://tva.ua/wp-content/uploads/2020/12/10-sobaka-shpits.jpg"
+                },
+                {
+                    "image": "https://faunistics.com/wp-content/uploads/2019/02/1-4.jpg"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLjqCCsDg8qGXlyQmdmsT0cxx2vTNDlXA5ItTnOhkftOIXo84qG1vCkcH1wmS1tcDGVk&usqp=CAU"
+                }
+            ]
         },
         {
             "id":3,
@@ -30,7 +75,22 @@
             "age":"3-4 роки",
             "sex":"Дівчинка",
             "size":"Малий",
-            "type":"Собака"
+            "type":"Собака",
+            "petDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "images": [
+                {
+                    "image": "https://petsi.net/images/dogbreed/pomeranian.jpg"
+                },
+                {
+                    "image": "https://tva.ua/wp-content/uploads/2020/12/10-sobaka-shpits.jpg"
+                },
+                {
+                    "image": "https://faunistics.com/wp-content/uploads/2019/02/1-4.jpg"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLjqCCsDg8qGXlyQmdmsT0cxx2vTNDlXA5ItTnOhkftOIXo84qG1vCkcH1wmS1tcDGVk&usqp=CAU"
+                }
+            ]
         },
         {
             "id":4,
@@ -38,7 +98,22 @@
             "age":"3-4 роки",
             "sex":"Дівчинка",
             "size":"Малий",
-            "type":"Собака"
+            "type":"Собака",
+            "petDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "images": [
+                {
+                    "image": "https://petsi.net/images/dogbreed/pomeranian.jpg"
+                },
+                {
+                    "image": "https://tva.ua/wp-content/uploads/2020/12/10-sobaka-shpits.jpg"
+                },
+                {
+                    "image": "https://faunistics.com/wp-content/uploads/2019/02/1-4.jpg"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLjqCCsDg8qGXlyQmdmsT0cxx2vTNDlXA5ItTnOhkftOIXo84qG1vCkcH1wmS1tcDGVk&usqp=CAU"
+                }
+            ]
         },
         {
             "id":5,
@@ -46,7 +121,22 @@
             "age":"6-8 років",
             "sex":"Дівчинка",
             "size":"Малий",
-            "type":"Собака"
+            "type":"Собака",
+            "petDescription":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum",
+            "images": [
+                {
+                    "image": "https://petsi.net/images/dogbreed/pomeranian.jpg"
+                },
+                {
+                    "image": "https://tva.ua/wp-content/uploads/2020/12/10-sobaka-shpits.jpg"
+                },
+                {
+                    "image": "https://faunistics.com/wp-content/uploads/2019/02/1-4.jpg"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLjqCCsDg8qGXlyQmdmsT0cxx2vTNDlXA5ItTnOhkftOIXo84qG1vCkcH1wmS1tcDGVk&usqp=CAU"
+                }
+            ]
         }
     ]
 }

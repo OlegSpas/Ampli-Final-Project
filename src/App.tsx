@@ -8,7 +8,9 @@ import AboutPage from './components/aboutPage/aboutPage';
 import BlogListPage from './components/blogListPage/blogListPage';
 import BlogPage from './components/blogPage/blogPage';
 import PetsListPage from './components/petsListPage/petsListPage';
+import PetPage from './components/petPage/petPage';
 import './App.css';
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
         <Route exact path={HOME} component={HomePage} />
         <Route path={ABOUT} component={AboutPage} />
         <Route path={`${BLOG}/:id`} component={BlogPage}/> 
+        <Route path={`${ADOPTION}/:id`} component={PetPage}/>
         {/* ЗАПИТАТИСЬ ЗА РОЗМІЩЕННЯ ЧОМУ ЯКЩО БЛОГ АЙДІ НИЖЧЕ, ТО НЕ ПРАЦЮЄ */}
         <Route path={BLOG} component={BlogListPage} />
         {/* <Route path={`${BLOG}/:id`} component={BlogPage}/>  */}
