@@ -1,7 +1,7 @@
 import React from 'react';
 import PetsListSelectsList from './petsListSelectsList';
 import PetsData from '../../fakeData/petsData.json';
-import { SelectStates } from '../../route/selectStates';
+// import { SelectStates } from '../../route/selectStates';
 import PetsCard from '../homePetsListComponent/homePetsListComponentCard';
 import { Link } from 'react-router-dom';
 import { ADOPTION } from '../../route/Routes';
