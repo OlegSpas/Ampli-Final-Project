@@ -18,7 +18,7 @@ export default function PetsList() {
     const [ petSize, setPetSize ] = React.useState('');
     const [ petSex, setPetSex ]  = React.useState('');
     const [ foundPets, setFoundPets ] = React.useState(pets);
-    const [ state, setState ] = React.useState(SelectStates);
+    // const [ state, setState ] = React.useState(SelectStates);
 
     // console.log(state)
 
@@ -40,9 +40,9 @@ export default function PetsList() {
                     setPetAge={setPetAge}
                     setPetSize={setPetSize}
                     setPetSex={setPetSex}
-                    setState={setState}
-                    state={state}
-                    SelectStates={SelectStates}
+                    // setState={setState}
+                    // state={state}
+                    // SelectStates={SelectStates}
                     handleFilter={handleFilter} 
                     foundPets={foundPets}/>
                 <div className="petsList__list">

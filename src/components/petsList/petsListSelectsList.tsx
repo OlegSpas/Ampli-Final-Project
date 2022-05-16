@@ -10,9 +10,18 @@ interface IProps{
     setPetAge: (value:any) => void;
     setPetSize: (value:any) => void;
     setPetSex: (value:any) => void;
+    // setState: (value:any) => void;
+    // state:any;
+    // SelectStates:any[];
 }
 
 export default function PetsListSelectsList(props:IProps) {
+  // console.log(props.SelectStates)
+  // const selectStates = props.SelectStates;
+
+  // const handleSelect = (selectValue: any) => {
+  //   props.setState(selectStates)
+  // }
 
   return (
     <div className="petsList__menu">
@@ -24,6 +33,7 @@ export default function PetsListSelectsList(props:IProps) {
                   setPetSize={props.setPetSize}
                   setPetSex={props.setPetSex}
                   foundPets={props.foundPets} 
+                  // handleSelect={handleSelect}
                   key={index} 
                   select={select} />
             ))}
