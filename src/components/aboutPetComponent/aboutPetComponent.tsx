@@ -2,8 +2,8 @@ import React from 'react';
 import ImagePetBlog from './imagePetBlock';
 import "react-multi-carousel/lib/styles.css";
 import './aboutPageComponent.scss';
-import PetCharacteristicItem from './PetCharacteristicItem';
 import { PetCharacteristic } from '../../route/petCharacteristic';
+import ActionPopup from '../actionPopups/actionPopup';
 
 
 interface IProps{
@@ -23,8 +23,18 @@ interface IProps{
 
 
 export default function AboutPageComponent(props:IProps) {
-
+    const [ isOpenAdoptionPopup, setOpenAdoptionPopup ] = React.useState(false);
     const { id, name, age, sex, size, type, petDescription, images} = props.currentPet;
+
+    const handleOpenAdoptionPopup = () =>{
+        setOpenAdoptionPopup(true);
+        document.body.style.overflow = 'hidden';
+    }
+
+    const handleCloseAdoptionPopup = () =>{
+        setOpenAdoptionPopup(false);
+        document.body.style.overflow = 'visible';
+    }
 
   return (
     <section id='PetPage'>
@@ -53,7 +63,7 @@ export default function AboutPageComponent(props:IProps) {
                             </div>
                         </div>
                         <div className="petPage__actions">
-                            <button className="petPage__button">Прихистити</button>
+                            <button onClick={handleOpenAdoptionPopup} className="petPage__button">Прихистити</button>
                             <button className="petPage__button">Взяти під опіку</button>
                         </div>
                     </div>
@@ -61,6 +71,7 @@ export default function AboutPageComponent(props:IProps) {
                         <h2 className='petPage__descriptionSubTitle'>Про тварину</h2>
                         <p className='petPage__petDescription'>{petDescription}</p>
                     </div>
+                    { isOpenAdoptionPopup && <ActionPopup close={handleCloseAdoptionPopup}/>}
                 </div>
             </div>
         </div>

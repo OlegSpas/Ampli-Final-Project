@@ -52,7 +52,7 @@ interface IPetCharacteristic{
 interface IHelpTypes{
 	helpName: string;
 	helpDescription:  string;
-	buttonFunction: any;
+	popup: any;
 }
 
 interface IPopupTextBlock{

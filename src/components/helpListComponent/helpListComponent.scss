@@ -53,4 +53,184 @@
                 align-self: center;
             }
         }
+        .help__popup{
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            left: 0;
+            top: 0%;
+            right:0;
+            z-index: 9999;
+            background-color: #1a1a1a80;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            scrollbar-width: 3px;
+            .mainPopup{
+                background-color: #fff;
+                padding: 4% 2%;
+                height: 750px;
+                width: 90%;
+                max-width: 1300px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                border-radius: 10px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar{
+                    width: 6px;
+                    width: 11px;
+                    border-radius: 20px;
+                }
+                &::-webkit-scrollbar-track{
+                    width: 6px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #646464;
+                    border-radius: 30px;
+                  }
+                  .form__popup{
+                      width: 52%;
+                      .formData{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                              .form__input{
+                                outline: none;
+                                cursor: text;
+                                background-color: transparent;
+                                border: 0;
+                                border: 1px solid #A9A9A9;
+                                color: #777777;
+                                height: 54px;
+                                width: 270px;
+                                margin-bottom: 4%;    
+                                font-family: 'Montserrat Regular';
+                                font-size: 18px;
+                                line-height: 22px;   
+                                border-radius: 10px; 
+                                padding-left: 3% ;
+                                
+                                &::placeholder{
+                                    color: #777777;
+                                }
+                              }
+                          
+                          .form__select{
+                            outline: none;
+                            cursor: pointer;
+                            background-color: transparent;
+                            border: 0;
+                            border: 1px solid #A9A9A9;
+                            color: #777777;
+                            height: 54px;
+                            width: 270px;
+                            margin-bottom: 4%;    
+                            font-family: 'Montserrat Regular';
+                            font-size: 18px;
+                            line-height: 22px;   
+                            border-radius: 10px; 
+                            padding-left: 1% ;
+                            
+                            &::placeholder{
+                                color: #777777;
+                            }
+                          }
+                      }
+                      .formMessage{
+                        .form__item{
+                            .form__textarea{
+                              outline: none;
+                              padding: 3% 3%;
+                              background-color: transparent;
+                              border-radius:10px;
+                              border: 1px solid #A9A9A9;
+                              height: 190px;
+                              width: 100%;
+                              margin-bottom: 2%;
+                              
+                              font-family: 'Montserrat Regular';
+                              font-size: 18px;
+                              line-height: 22px;
+                              color:#777777;
+                              &::placeholder{
+                                  color: #777777;
+                              }
+                            }
+                        }    
+                    }
+                    .formCheckbox{
+                        .checkbox{
+                            margin-top: 1%;
+                            display: flex;
+                            align-items: center;
+                            .checkbox__label{
+                                cursor: pointer;
+                                font-family: 'Montserrat Regular';
+                                font-size: 14px;
+                                line-height: 18px;
+                                color: #999999;
+                                margin-left: 3%;
+                            }
+                        }
+                    }
+                    .formActions{
+                        margin-top: 7%;
+                        display: flex;
+                        justify-content: space-between;
+                        .form__button{
+                            cursor: pointer;
+                            width: 250px;
+                            height: 65px;
+                            background-color: #FFBF45;
+                            font-family: 'Montserrat Black';
+                            font-size: 18px;
+                            line-height: 22px;
+                            color: #fff;
+                            border: 0;
+                            border-radius: 5px;
+                            outline: none;
+                        }
+                    }
+                  }
+                  .popup__content{
+                      width: 42%;
+                      .popup__title{
+                        font-family: 'Montserrat Black';
+                        font-size: 32px;
+                        line-height: 32px;
+                        margin-bottom: 5%;
+                      }
+                      .popup__description{
+                        font-family: 'Montserrat Regular';
+                        font-size: 18px;
+                        line-height: 18px;
+                      }
+
+                      .popup__subTitle{
+                        font-family: 'Montserrat Bold';
+                        font-size: 20px;
+                        line-height: 25px;  
+                        margin-top: 3%;                  
+                      }
+                      .popup__helpList{
+                          margin-left: 4%;
+                          .popup__helpListItem{
+                              margin-top: 1.5%;
+                              list-style-type: disc;      
+                              .popup__HelpName{
+                                font-family: 'Montserrat Medium';
+                                font-size: 18px;
+                                line-height: 23px;                      
+                              }
+                              .popup__helpDescription{
+                                font-family: 'Montserrat Regular';
+                                font-size: 18px;
+                                line-height: 23px;                           
+                              }
+                          }
+                      }
+                  }
+            }
+        }
     }

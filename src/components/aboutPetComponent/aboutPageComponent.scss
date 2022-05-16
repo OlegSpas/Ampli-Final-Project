@@ -116,4 +116,43 @@
             }
         }
     }
+    .action__popup{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        top: 0%;
+        right:0;
+        z-index: 9999;
+        background-color: #1a1a1a80;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scrollbar-width: 3px;
+        .mainPopup{
+            margin: 5% 0;
+            background-color: #fff;
+            padding: 1% 0;
+            height: 750px;
+            width: 90%;
+            max-width: 1300px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            border-radius: 10px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar{
+                width: 6px;
+                width: 11px;
+                border-radius: 20px;
+            }
+            &::-webkit-scrollbar-track{
+                width: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #646464;
+                border-radius: 30px;
+              }
+        }
+    }
 }
