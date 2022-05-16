@@ -1,0 +1,56 @@
+   .helpList__content{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 7% 0;
+        .helpList__card{
+            display: flex;
+            flex-direction: column;
+            max-width: 330px;
+            min-height: 450px;
+            border-radius: 15px;
+            box-shadow: 4px 3px 15px 0px #00000040;
+            background-color: #fff;
+            .card__image{
+                img{
+                    width: 100%;
+                    height: 200px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    object-fit: cover;
+                }
+            }
+            .card__content{
+                padding: 3% 5% 5% 5%;
+                height: 31%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h3{
+                    font-family: 'Montserrat ExtraBold';
+                    font-size: 18px;
+                    line-height: 23px;
+                    width: 100%;
+                    height: 60px;
+                }
+                p{
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+            }
+            button{
+                cursor: pointer;
+                border: 0;
+                border-radius: 5px;
+                outline: none;
+                background-color: #FFBF45;
+                width: 180px;
+                height: 55px;
+                margin-top: 7%;
+                font-family: 'Montserrat Bold';
+                font-size: 18px;
+                line-height: 23px;
+                align-self: center;
+            }
+        }
+    }
