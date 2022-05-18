@@ -8,6 +8,7 @@ interface IProps{
 
 export default function SendResHelpPopup(props:IProps) {
   const [canClose, setCanClose] = React.useState(true);
+  
   const onChange = (value:any) => {
     console.log('Captcha value:', value);
   }

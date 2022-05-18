@@ -58,7 +58,8 @@
             display: flex;
             width: 100%;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+            margin-top: 2%;
             .petPage__petCharacteristic{
                 width: 50%;
                 .petCharacteristic__item{
@@ -116,7 +117,8 @@
             }
         }
     }
-    .action__popup{
+
+    .adoption__popup{
         height: 100vh;
         width: 100vw;
         position: fixed;
@@ -130,15 +132,11 @@
         justify-content: center;
         scrollbar-width: 3px;
         .mainPopup{
-            margin: 5% 0;
             background-color: #fff;
-            padding: 1% 0;
+            padding: 2% 70px;
             height: 750px;
-            width: 90%;
-            max-width: 1300px;
-            display: flex;
-            justify-content: flex-start;
-            flex-wrap: wrap;
+            width: 100%;
+            max-width: 725px;
             border-radius: 10px;
             overflow-y: scroll;
             &::-webkit-scrollbar{
@@ -152,6 +150,138 @@
             &::-webkit-scrollbar-thumb {
                 background: #646464;
                 border-radius: 30px;
+              }
+
+              .popup__title{
+                font-family: 'Montserrat Black';
+                font-size: 32px;
+                line-height: 32px;              
+              }
+
+              .popup__description{
+                font-family: 'Montserrat Medium';
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 16px;   
+                margin-top: 2%;
+              }
+
+              .form__popup{
+                  width: 100%;
+                  margin-top: 3%;
+                  .formData{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                          .form__input{
+                            outline: none;
+                            cursor: text;
+                            background-color: transparent;
+                            border: 0;
+                            border: 1px solid #A9A9A9;
+                            color: #777777;
+                            height: 54px;
+                            width: 270px;
+                            margin-bottom: 4%;    
+                            font-family: 'Montserrat Regular';
+                            font-size: 18px;
+                            line-height: 22px;   
+                            border-radius: 10px; 
+                            padding-left: 3% ;
+                            
+                            &::placeholder{
+                                color: #777777;
+                            }
+                          }
+                      
+                      .form__select{
+                        outline: none;
+                        cursor: pointer;
+                        background-color: transparent;
+                        border: 0;
+                        border: 1px solid #A9A9A9;
+                        color: #777777;
+                        height: 54px;
+                        width: 270px;
+                        margin-bottom: 4%;    
+                        font-family: 'Montserrat Regular';
+                        font-size: 18px;
+                        line-height: 22px;   
+                        border-radius: 10px; 
+                        padding-left: 1% ;
+                        
+                        &::placeholder{
+                            color: #777777;
+                        }
+                      }
+                  }
+                  .formMessage{
+                    .form__item{
+                        .form__textarea{
+                          outline: none;
+                          padding: 3% 3%;
+                          background-color: transparent;
+                          border-radius:10px;
+                          border: 1px solid #A9A9A9;
+                          height: 150px;
+                          width: 100%;
+                          margin-bottom: 2%;
+                          
+                          font-family: 'Montserrat Regular';
+                          font-size: 18px;
+                          line-height: 22px;
+                          color:#777777;
+                          &::placeholder{
+                              color: #777777;
+                          }
+                        }
+                    }    
+                }
+                .formCheckbox{
+                    .checkbox{
+                        margin-top: 1%;
+                        display: flex;
+                        align-items: center;
+                        .checkbox__label{
+                            cursor: pointer;
+                            font-family: 'Montserrat Regular';
+                            font-size: 14px;
+                            line-height: 18px;
+                            color: #999999;
+                            margin-left: 3%;
+                        }
+                    }
+                }
+
+                .formWarning{
+                    font-family: 'Montserrat Bold';
+                    font-size: 16px;
+                    line-height: 16px;
+                    margin-top: 3%;
+                }
+                .formActions{
+                    margin-top: 2%;
+                    display: flex;
+                    justify-content: space-between;
+                    .form__button{
+                        cursor: pointer;
+                        width: 250px;
+                        height: 65px;
+                        background-color: #FFBF45;
+                        font-family: 'Montserrat Bold';
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #fff;
+                        border: 0;
+                        border-radius: 5px;
+                        outline: none;
+                    }
+                    .secondaryButton{
+                        background-color: transparent;
+                        border: 2px solid #FFBF45;
+                        color: #1C1C1C;
+                    }
+                }
               }
         }
     }

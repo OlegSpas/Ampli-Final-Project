@@ -1,10 +1,10 @@
 import React from 'react';
 import { HelpTypes } from './helpTypes';
 import HelpCard from './helpCard';
-import './helpListComponent.scss'
 import JoinTeamPopup from '../actionPopups/joinTeamPopup';
 import SendResHelpPopup from '../actionPopups/sendResHelpPopup';
 import SendMoneyHelp from '../actionPopups/sendMoneyHelp';
+import './helpListComponent.scss'
 
 
 

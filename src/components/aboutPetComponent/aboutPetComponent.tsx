@@ -3,7 +3,7 @@ import ImagePetBlog from './imagePetBlock';
 import "react-multi-carousel/lib/styles.css";
 import './aboutPageComponent.scss';
 import { PetCharacteristic } from '../../route/petCharacteristic';
-import ActionPopup from '../actionPopups/actionPopup';
+import AdoptionPopup from '../actionPopups/adoptPopup';
 
 
 interface IProps{
@@ -64,14 +64,13 @@ export default function AboutPageComponent(props:IProps) {
                         </div>
                         <div className="petPage__actions">
                             <button onClick={handleOpenAdoptionPopup} className="petPage__button">Прихистити</button>
-                            <button className="petPage__button">Взяти під опіку</button>
                         </div>
                     </div>
                     <div className="petPage__description">
                         <h2 className='petPage__descriptionSubTitle'>Про тварину</h2>
                         <p className='petPage__petDescription'>{petDescription}</p>
                     </div>
-                    { isOpenAdoptionPopup && <ActionPopup close={handleCloseAdoptionPopup}/>}
+                    { isOpenAdoptionPopup && <AdoptionPopup close={handleCloseAdoptionPopup}/>}
                 </div>
             </div>
         </div>
