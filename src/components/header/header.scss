@@ -24,3 +24,39 @@
         }
     }
 }
+
+.gamb__menu{
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .headerContent{
+        justify-content: space-around;
+        .navbar-menu{
+            width: 60%;
+        }
+    }
+  }
+
+  
+@media screen and (max-width: 991px) {
+    .headerContent .navbar-menu{
+        display: none;
+    }
+    .gamb__menu{
+        display: block;
+    }
+    .navbar-logo{
+        width: 60%;
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    .navbar-logo{
+        width: 70%;
+    }
+    .navbar-logo img{
+        width: 100%;
+    }
+  }
+  

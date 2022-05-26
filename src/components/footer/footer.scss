@@ -37,12 +37,14 @@
             }
         }
         .footer-menu{
-            width: 50%;
+            width: 20%;
             .footer-menu__list{
                 display: flex;
-                align-items: center;
+                flex-direction: column;
+                align-items: flex-end;
                     .navbar-menu__item{
                         margin-left:7% ;
+                        margin-top: 1%;
                         .navbar-menu__link{
                             text-decoration: none;
                             font-family: 'Montserrat Medium';
@@ -51,5 +53,59 @@
                     }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .homePetsComponent__title{
+        margin-left: 2%;
+    }
+    .footer__content .footer__mainContent .footer__contacts{
+        width: 20%;
+    }
+    .footer__content{
+        padding: 3% 2%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .footer__content .footer__mainContent .footer__copyright{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer__content .footer__mainContent .footer__copyright{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .footer__content .footer__mainContent{
+        flex-direction: column-reverse;
+    }
+    .footer__content .footer__mainContent .footer__contacts{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .footer__content .footer__mainContent .footer-menu{
+        width: 100%;
+        margin-bottom: 3%;
+    }
+    .footer__content .footer__mainContent .footer-menu .footer-menu__list{
+        align-items: center;
+    }
+    .footer__content .footer__mainContent .footer-menu .footer-menu__list .navbar-menu__item{
+        margin-left: 0;
+    }
+    .footer__content .footer__mainContent .footer__contacts .footer__text{
+        margin-bottom: 0%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer__content .footer__mainContent .footer__contacts .footer__text{
+        text-align: center;
     }
 }

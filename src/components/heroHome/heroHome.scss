@@ -9,7 +9,6 @@
     height: 100vh;
     .heroOfferConstruction{
         width: 36%;
-        // height:20%;
         .heroOfferConstruction__title{
             font-family: 'Montserrat Black';
             font-size: 40px;
@@ -37,10 +36,57 @@
         }
     }
     .heroImage{
-        // position: relative;
-        // bottom: -22%;
         .heroImage__img{
 
         }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .heroContent{
+        justify-content: space-evenly;
+        .heroOfferConstruction{
+            width: 45%;
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .heroContent{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+        .heroOfferConstruction{
+            width: 80%;
+            text-align: center;
+        }
+    }
+    .heroContent .heroOfferConstruction .heroOfferConstruction__title{
+        margin-bottom: 2%;
+    }
+    .heroContent .heroOfferConstruction .heroOfferConstruction__subTitle{
+        margin-bottom: 3%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heroContent .heroOfferConstruction .heroOfferConstruction__title{
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .heroContent .heroOfferConstruction{
+        width: 90%;
+    }
+    .heroContent .heroOfferConstruction .heroOfferConstruction__title{
+        font-size: 38px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heroContent .heroOfferConstruction .heroOfferConstruction__button{
+        width: 230px;
     }
 }

@@ -80,3 +80,29 @@ h2{
   line-height: 41px;
 
 }
+
+
+@media screen and (max-width: 1200px) {
+  .container {
+      max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container {
+    max-width: 1040px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  h2{
+    font-size: 28px;
+    line-height: 34px;
+  }
+}

@@ -77,3 +77,28 @@
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .homePetsComponent__title{
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .homePetsComponent__content .homePetsComponent__list .petCard {
+        max-width: 70%;
+    }
+    .homePetsComponent__content .homePetsComponent__list .petCard .petCard__content{
+        padding: 3% 3% 3% 5%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .homePetsComponent__content .homePetsComponent__list .petCard{
+        max-width: 90%;
+    }
+    .homePetsComponent__content .homePetsComponent__action .homePetsComponent__button{
+        height: 60px;
+        width: 210px;
+        margin-top: 5%;
+    }
+}

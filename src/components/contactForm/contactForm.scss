@@ -80,3 +80,31 @@
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .contactForm__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .contactForm__content .contactForm__main{
+     width: 100%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .contactForm__content .contactForm__main{
+        width: 85%;
+    }
+    .contactForm__content .contactForm__title{
+        width: 85%;
+    }
+    .form__item{
+        width: 100%;
+    }
+    .contactForm__content .contactForm__main .form__item .form__input{
+        width: 100%;
+        margin-bottom: 5%;
+    }
+}

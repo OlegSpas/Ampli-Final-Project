@@ -21,6 +21,9 @@ function Header() {
             ))}
           </ul>
         </nav>
+        <div className="gamb__menu">
+          menu
+        </div>
       </div>
     </div>
    </header>

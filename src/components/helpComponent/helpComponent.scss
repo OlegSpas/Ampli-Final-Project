@@ -4,7 +4,7 @@
         justify-content: space-evenly;
         padding: 7% 0;
         .helpComponent__card{
-            max-width: 330px;
+            max-width: 500px;
             min-height: 450px;
             border-radius: 15px;
             box-shadow: 4px 3px 15px 0px #00000040;
@@ -12,28 +12,28 @@
             .card__image{
                 img{
                     width: 100%;
-                    height: 200px;
+                    height: 250px;
                     border-top-left-radius: 15px;
                     border-top-right-radius: 15px;
                     object-fit: cover;
                 }
             }
             .card__content{
-                padding: 3% 5% 5% 11%;
+                padding: 3% 5% 5% 5%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 h3{
                     font-family: 'Montserrat ExtraBold';
-                    font-size: 18px;
+                    font-size: 24px;
                     line-height: 23px;
-                    margin-bottom: 7%;
+                    margin-bottom: 3%;
                     width: 100%;
                 }
                 p{
                     font-family: 'Montserrat Medium';
-                    font-size: 14px;
-                    line-height: 18px;
+                    font-size: 16px;
+                    line-height: 20px;
                     // margin-bottom: 7%;
                 }
                 button{
@@ -44,7 +44,7 @@
                     background-color: #FFBF45;
                     width: 180px;
                     height: 55px;
-                    margin-top: 7%;
+                    margin-top: 5%;
                     font-family: 'Montserrat Bold';
                     font-size: 18px;
                     line-height: 23px;
@@ -52,5 +52,37 @@
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .helpComponent__Content .helpComponent__list .helpComponent__card{
+        max-width: 400px;
+    }
+
+    .helpComponent__title{
+        margin-left: 2%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .helpComponent__Content .helpComponent__list{
+        flex-wrap: wrap;
+        padding: 0% 0% 7% 0%;
+    }
+    .helpComponent__Content .helpComponent__list .helpComponent__card{
+        margin-top: 7%;
+    }
+    .helpComponent__Content .helpComponent__list .helpComponent__card{
+        max-width: 80%;
+    }
+    .helpComponent__Content .helpComponent__list .helpComponent__card .card__image img{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .helpComponent__Content .helpComponent__list .helpComponent__card{
+        min-height: 300px;
     }
 }
