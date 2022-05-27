@@ -38,3 +38,54 @@
             color:#fff;
         }
 }
+@media screen and (max-width: 1199px) {
+    .heroBlog__content{
+        margin-left: 3.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .heroBlog__content{
+        width:70%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .heroBlog__content{
+        width:90%;
+    }
+    
+}
+
+@media screen and (max-width: 575px) {
+    .heroBlog__content{
+        padding-bottom: 7%;
+        width:100%;
+    }
+    .heroBlog__content .heroBlog__description{
+        width: 100%;
+    }
+    .heroBlog__content .heroBlog__title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .heroBlog__content .heroBlog__button{
+        width: 90%;
+    }
+    .heroBlog__content{
+        width: 90%;
+    }
+    .heroBlog__content .heroBlog__title{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .heroBlog__content .heroBlog__description{
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+

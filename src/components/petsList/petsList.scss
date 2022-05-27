@@ -107,3 +107,94 @@
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .petsList__content .petsList__menu{
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .petsList__content .petsList__menu{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .petsList__content .petsList__menu .petsList__selects{
+        width: 70%;
+    }
+    .petsList__menu{
+        flex-direction: column-reverse;
+    }
+    .petsList__content .petsList__menu .petsList__selects .petList__select:first-of-type{
+        margin-left: 3%;
+    }
+    .petsList__content .petsList__menu .petsList__selects .petList__select{
+        margin-bottom: 3%;
+        margin-left: 3%;
+        width: 210px;
+    }
+    .petsList__content .petsList__list{
+        padding: 4% 0;
+        justify-content: center;
+    }
+    .petsList__content .petsList__list .petsList__cardLink .petCard{
+        max-width: 320px;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .petsList__content .petsList__menu{
+        flex-direction: column;
+        align-items: center;
+    }
+    .petsList__content .petsList__menu .petsList__selects{
+        width: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .petsList__content .petsList__menu .petsList__selects .petList__select{
+        width: 250px;
+    }
+    .petsList__content .petsList__menu .petsList__searchBtn{
+        width: 270px;
+        height: 65px;
+        justify-content: center;
+        margin-top: 2%;
+        img{
+            margin-left: 3%;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .petsList__content .petsList__menu .petsList__selects{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    .petsList__content .petsList__menu .petsList__selects{
+        width: 90%;
+    }
+    .petsList__content .petsList__menu .petsList__selects .petList__select{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .petsList__content .petsList__menu .petsList__selects .petList__select:first-of-type{
+        margin-left: 0;
+    }
+    .petsList__content .petsList__menu .petsList__selects .petList__select{
+        margin-left: 0;
+    }
+    .petsList__content .petsList__list .petsList__cardLink .petCard{
+        max-width: 250px;
+    }
+    .petsList__content .petsList__list{
+        align-items: center;
+    }
+}
