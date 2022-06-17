@@ -6,7 +6,7 @@ export default function GoogleMapComponent() {
   return (
     <section className='GoogleMap'>
         <div className="container">
-            <GoogleMap/>
+          <iframe className='mainGoogleMap' src="https://www.google.com/maps/d/u/0/embed?mid=1sEZgiS_JT71fr5ExQUa4d8fajsNya4I&ehbc=2E312F"></iframe>
         </div>
     </section>
   )

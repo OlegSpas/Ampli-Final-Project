@@ -2,18 +2,22 @@ import React from 'react';
 import './heroBlogPage.scss'
 
 
+interface IProps{
+    currentBlog: IBlogs;
+}
 
-export default function HeroBlogPage() {
+
+export default function HeroBlogPage(props:IProps) {
 
   return (
       <section id='HeroBlog'>
           <div className="container">
               <div className="heroBlog__content">
                     <h1 className="heroBlog__title">
-                        Чому потрібно відвідувати ветеринара?
+                        {props.currentBlog.title}
                     </h1>
                     <p className="heroBlog__description">
-                         mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis
+                        {props.currentBlog.description}
                     </p>
               </div>
           </div>

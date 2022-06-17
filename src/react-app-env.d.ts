@@ -53,6 +53,7 @@ interface IHelpTypes{
 	helpName: string;
 	helpDescription:  string;
 	popup: any;
+	image:string;
 }
 
 interface IPopupTextBlock{
@@ -86,4 +87,89 @@ interface IPopupForm{
 interface IActionPopups{
 	textBlock: IPopupTextBlock;
 	form:IPopupForm;
+}
+
+
+interface IAdminRoute {
+	buttonText: string;
+	buttonValue:string;
+	buttonIcon:string;
+}
+
+interface IAdminMessageRoute {
+	buttonText: string;
+	buttonValue: string;
+}
+
+interface IMessage{
+	messageId: number;
+    messageType: string;
+    authorName: string;
+    authorSecondName: any;
+    authorPhoneNumber: string;
+    authorEmail: string;
+    report: any;
+    reportDetails: any;
+    messages: string;
+    date: string;
+}
+
+///
+
+interface IPet{
+	id:number;
+	name:string;
+	description:string;
+	age:string;
+	sex:string;
+	size:string;
+	type:string;
+	images: IImage[];
+}
+
+interface IImage{
+	id:number;
+	url:string;
+}
+
+interface ITeam{
+	id:number;
+	name:string;
+	phoneNumber:string;
+	job:string;
+	email:string;
+	login:string;
+	password:string;
+	avatar:string
+}
+
+interface IMessages{
+  id: number;
+  messageType: string;
+  authorName: string;
+  authorSecondName: string;
+  authorPhoneNumber: string;
+  authorEmail: string;
+  report: string;
+  reportDetails: string;
+  message: string;
+  date: string;
+}
+
+interface IBlogs{
+	id:number;
+	title:string;
+	description:string;
+	date:string;
+	image:string;
+	blogType:string;
+	message: string;
+}
+
+
+interface ITriggers{
+	title:string;
+	description:string;
+	color:string;
+	image:string;
 }

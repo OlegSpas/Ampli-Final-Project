@@ -13,6 +13,12 @@
             max-width: 350px;
             min-height: 335px;
             background-color: #fff;
+            text-decoration: none;
+            transition: all .2s ease-out;
+            transition-delay: .13s;
+            &:hover{
+                box-shadow: 0px 4px 14px 1px #00000029;
+            }
             .card__image{
                 img{
                     width: 100%;
@@ -44,6 +50,10 @@
             cursor: pointer;
             font-family: 'Montserrat ExtraBold';
             font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             line-height: 22px;
             outline: none;
             border: 2px solid #FFBF45;

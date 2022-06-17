@@ -2,7 +2,7 @@
     background: linear-gradient(112.86deg, #FFBF45 9.58%, #FF9C41 90.39%);
 }
 
-.heroBlog__content{
+.heroBlogList__content{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -19,4 +19,16 @@
             font-size: 16px;
             line-height: 16px;          
         }
+}
+
+@media screen and (max-width: 1199px) {
+    .heroBlogList__content{
+        margin-left: 3.5%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .heroBlogList__content{
+        width:70%;
+    }
 }

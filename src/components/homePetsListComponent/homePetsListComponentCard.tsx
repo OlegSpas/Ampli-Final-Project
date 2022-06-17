@@ -1,27 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import petDog from '../../images/petDog.jpg'
-import './homePetsListComponent.scss';
+import { ADOPTION } from '../../route/Routes';
+// import './homePetsListComponent.scss';
 
 interface IProps{
-    pet:{
-        id:number;
-        name:string;
-        age:string;
-        sex:string;
-        size:string;
-        type:string;
-    }
+    pet:IPet;
 }
 
 
 export default function PetsCard(props:IProps) {
 
-    const { id, name, age, sex, size, type } = props.pet
+    const { name, age, sex, size, type } = props.pet
 
   return (
-    <div className="petCard">
+    <Link to={{pathname:`${ADOPTION}/${props.pet.id}`}} className="petCard">
         <div className="petCard__image">
-            <img src={petDog} alt={type} />
+            <img src={props.pet.images[0].url} alt={type} />
         </div>
         <div className="petCard__content">
             <h3 className='petCard__title'>{name}</h3>
@@ -47,6 +42,6 @@ export default function PetsCard(props:IProps) {
                 </button>
             </div>
         </div>
-    </div>
+    </Link>
   )
 }

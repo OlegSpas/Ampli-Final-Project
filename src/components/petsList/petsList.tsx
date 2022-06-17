@@ -6,21 +6,27 @@ import PetsCard from '../homePetsListComponent/homePetsListComponentCard';
 import { Link } from 'react-router-dom';
 import { ADOPTION } from '../../route/Routes';
 import './petsList.scss';
+import { getPets } from '../../axios/pets';
 
-export default function PetsList() {
-    const pets = PetsData.pets;  
-    const filteredPets = new Array()
+
+interface IProps{
+    pets:IPet[];
+}
+
+export default function PetsList(props:IProps) {
+    // const pets = PetsData.pets;  
 
     // Один обєкт де все є всі стейти
-
+    const [ pets, setPets ] = React.useState<IPet[]>(props.pets);
     const [ petType, setPetType ] = React.useState('');
     const [ petAge, setPetAge ] = React.useState('');
     const [ petSize, setPetSize ] = React.useState('');
     const [ petSex, setPetSex ]  = React.useState('');
-    const [ foundPets, setFoundPets ] = React.useState(pets);
+    const [ foundPets, setFoundPets ] = React.useState<IPet[]>(props.pets);
     // const [ state, setState ] = React.useState(SelectStates);
 
     // console.log(state)
+
 
     const handleFilter = () => {        
         setFoundPets(  pets.filter((pet1) =>  {
@@ -46,11 +52,13 @@ export default function PetsList() {
                     handleFilter={handleFilter} 
                     foundPets={foundPets}/>
                 <div className="petsList__list">
-                    {foundPets.map((pet, index) => (
-                        <Link className='petsList__cardLink' to={{pathname:`${ADOPTION}/${pet.id}`}}>
-                            <PetsCard key={index} pet={pet}/>
-                        </Link>
-                    ))}
+                    {foundPets.length > 0?(
+                        foundPets.sort((a, b) => a.id < b.id ? 1 : -1).map((pet, index) => (
+                                <PetsCard pet={pet}/>
+                        ))
+                    ) : (
+                        <h2 className='error__title'>Упс... Немає результатів</h2>
+                     )}
                 </div>
             </div>
         </div>

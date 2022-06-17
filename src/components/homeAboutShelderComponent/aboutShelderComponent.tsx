@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import ShelderPhoto from '../../images/shelder.png';
 import { ABOUT } from '../../route/Routes';
 import './aboutShelder.scss';
@@ -35,9 +35,9 @@ export default function AboutShelderComponent(props:IProps) {
                     <p>dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras </p>
                     {isAboutPage ?                     
                         '' : 
-                    <button>
+                    <Link className='about__link' to={ABOUT}>
                         Читати більше
-                    </button> }
+                    </Link> }
                 </div>
             </div>
         </div>

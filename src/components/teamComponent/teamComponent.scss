@@ -14,9 +14,11 @@
     .teamComponent__list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         .member__card{
-            margin:5% 2.5% 0% 2.5%;
-            max-width: 240px;
+            margin:5% 2.4% 0% 2.4%;
+            max-width: 230px;
+            // min-width: 270px;
             min-height: 290px;
             box-shadow: 4px 3px 15px 0px #00000040;
             background-color: #fff;
@@ -25,7 +27,7 @@
                 img{
                     border-top-left-radius: 15px;
                     border-top-right-radius: 15px;
-                    width: 100%;
+                    width: 220px;
                     height: 200px;
                     object-fit: cover;
                 }
@@ -53,7 +55,6 @@
             cursor: pointer;
             background-color: #FFBF45;
             outline: none;
-            border: 0;
             border-radius: 5px;
             width: 270px;
             height: 70px;
@@ -79,18 +80,20 @@
             margin: 5% 0;
             background-color: #fff;
             padding: 1% 0;
-            height: 750px;
+            height: 80%;
             width: 90%;
             max-width: 1300px;
             display: flex;
             justify-content: flex-start;
             flex-wrap: wrap;
+            align-content:flex-start;
             border-radius: 10px;
             overflow-y: scroll;
             .member__card{
                 margin:2.5% 2.5% 2.5% 2.5%;
                 max-width: 220px;
                 min-height: 290px;
+                max-height: 300px;
                 box-shadow: 4px 3px 15px 0px #00000040;
                 background-color: #fff;
                 border-radius: 15px;
@@ -98,7 +101,7 @@
                     img{
                         border-top-left-radius: 15px;
                         border-top-right-radius: 15px;
-                        width: 100%;
+                        width: 220px;
                         height: 200px;
                         object-fit: cover;
                     }
@@ -132,3 +135,45 @@
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .teamComponent__content .teamComponent__list .member__card{
+        max-width: 23%;
+        margin: 5% 1% 0% 1%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .teamComponent__content .teamComponent__list .member__card:last-of-type{
+        display: none;
+    }
+    .teamComponent__content .teamComponent__list .member__card{
+        max-width: 31.3%;
+    }
+    .teamComponent__content .teamComponent__list{
+        justify-content: center;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .teamComponent__content .teamComponent__list .member__card:last-of-type{
+        display: block;
+    }
+    .teamComponent__content .teamComponent__list .member__card{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 575px) {
+    .teamComponent__content .teamComponent__list .member__card{
+        max-width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .teamComponent__content .teamComponent__action .teamComponent__button{
+        width: 90%;
+    }
+}
+

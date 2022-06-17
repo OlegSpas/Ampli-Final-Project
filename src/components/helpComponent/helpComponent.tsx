@@ -19,9 +19,7 @@ export default function HelpComponent() {
                 {HelpData.helpTypes.map((card:any, index:number) =>(
                     <HelpComponentItem
                         key={index}
-                        title={card.title}
-                        description={card.description}
-                        link={card.link}
+                        card={card}
                     />
                       ))}
                 </div>

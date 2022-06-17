@@ -7,8 +7,12 @@ import GoogleMapComponent from '../googleMapComponent/googleMapComponent';
 import FeedbackComponent from '../feedbackComponent/feedbackComponent';
 
 
+interface IProps{
+  team: ITeam[];
+  blogs: IBlogs[];
+}
 
-export default function AboutPage() {
+export default function AboutPage(props: IProps) {
 
   return (
       <>
@@ -16,10 +20,10 @@ export default function AboutPage() {
         <AboutShelderComponent/>
         <Triggers/>
         <AdoptConditions/>
-        <TeamComponent/>
+        <TeamComponent team={props.team}/>
         <FeedbackComponent/>
         <GoogleMapComponent/>
-        <BlogListComponent/>
+        <BlogListComponent blogs={props.blogs}/>
       </>
   )
 }

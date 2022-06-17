@@ -4,61 +4,102 @@
         display: flex;
         flex-wrap: wrap;
         padding: 3% 0;
-        .petsList__cardLink{
-            margin: 0 1.25% 3% 1.25%;
+        .petCard{
+            margin: 0 2.5% 3% 0%;
             text-decoration: none;
-            .petCard{
-                border-radius: 15px;
-                background-color: #fff;
-                box-shadow: 4px 3px 15px 0px #00000040;
-                max-width: 270px;
-                min-height: 460px;
-                .petCard__image{
-                    img{
-                        width: 100%;
-                        height: 240px;
-                        object-fit: cover;
-                        border-top-left-radius: 15px;
-                        border-top-right-radius: 15px;
+            min-width: 270px;
+            border-radius: 15px;
+            background-color: #fff;
+            box-shadow: 4px 3px 15px 0px #00000040;
+            max-width: 270px;
+            min-height: 460px;
+            .petCard__image{
+                img{
+                    width: 100%;
+                    height: 240px;
+
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                }
+            }
+            .petCard__content{
+                padding: 5% 5% 5% 7%;
+                .petCard__title{
+                    font-family: 'Montserrat ExtraBold';
+                    font-size: 18px;
+                    line-height: 23px;
+                    margin-bottom: 3%;
+                }
+                .petCard__item{
+                    display: flex;
+                    p{
+                        font-family: 'Montserrat Medium';
+                        font-size: 14px;
+                        line-height: 18px;
+                        width: 35%;
                     }
                 }
-                .petCard__content{
-                    padding: 5% 5% 5% 7%;
-                    .petCard__title{
-                        font-family: 'Montserrat ExtraBold';
+                .petCard__action{
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 10%;
+                    .petCard__button{
+                        cursor: pointer;
+                        border:0;
+                        outline: none;
+                        width: 200px;
+                        height: 55px;
+                        background-color: #F8F4CE;
+                        border-radius: 5px;
+                        font-family: 'Montserrat Bold';
                         font-size: 18px;
                         line-height: 23px;
-                        margin-bottom: 3%;
-                    }
-                    .petCard__item{
-                        display: flex;
-                        p{
-                            font-family: 'Montserrat Medium';
-                            font-size: 14px;
-                            line-height: 18px;
-                            width: 35%;
-                        }
-                    }
-                    .petCard__action{
-                        display: flex;
-                        justify-content: center;
-                        margin-top: 10%;
-                        .petCard__button{
-                            cursor: pointer;
-                            border:0;
-                            outline: none;
-                            width: 200px;
-                            height: 55px;
-                            background-color: #F8F4CE;
-                            border-radius: 5px;
-                            font-family: 'Montserrat Bold';
-                            font-size: 18px;
-                            line-height: 23px;
-        
-                        }
+    
                     }
                 }
             }
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .similarPets__content .similarPets__list .petCard:last-of-type{
+        display: none;
+    }
+    .similarPets__content .similarPets__list{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .similarPets__content .similarPets__list .petCard:last-of-type{
+        display: block;
+    }
+    .similarPets__title{
+        margin-left: 7%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .similarPets__title {
+        margin-left: 2%;
+    }
+    .similarPets__content{
+        margin: 10% 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+
+}
+
+@media screen and (max-width: 375px) {
+    .similarPets__content{
+        margin: 15% 0;
+    }
+    .similarPets__content .similarPets__list .petCard{
+        max-width: 250px;
+    }
+}
+

@@ -4,18 +4,19 @@ import TeamData from '../../fakeData/teamData.json';
 import './teamComponent.scss';
 import TeamPopup from './teamPopup';
 
+interface IProps{
+  team: ITeam[];
+}
 
-export default function TeamComponent() {
+export default function TeamComponent(props: IProps) {
   const [isOpenPopup, setOpenPopup] = React.useState(false);
 
   const handleOpenPopup = () =>{
     setOpenPopup(true);
-    document.body.style.overflow = 'hidden'
   }
 
   const handleClosePopup = () =>{
     setOpenPopup(false);
-    document.body.style.overflow = 'visible'
   }
 
 
@@ -28,8 +29,8 @@ export default function TeamComponent() {
                     <h2>Наша команда</h2>
                 </div>
                 <div className="teamComponent__list">
-                    {TeamData.members.slice(0,4).map((item, index) => (
-                        <MemberCard key={index} {...item}/>
+                    {props.team.slice(0,4).map((member, index) => (
+                        <MemberCard key={index} member={member}/>
                     ))}
                 </div>
                 <div className="teamComponent__action">
@@ -37,7 +38,7 @@ export default function TeamComponent() {
                         Читати більше
                     </button>
                 </div>
-                {isOpenPopup && <TeamPopup  close={handleClosePopup}/>}
+                {isOpenPopup && <TeamPopup team={props.team} close={handleClosePopup}/>}
             </div>
        </div>
     </section>

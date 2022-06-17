@@ -3,12 +3,10 @@ import BlogParagraph from './blogParagraph';
 import './blogComponent.scss';
 
 interface IProps{
-    currentBlog: IBlog;
+    currentBlog: IBlogs;
 }
 
 export default function BlogComponent(props:IProps) {
-
-    const { id, title, description, date, link, image, blogType, author, authorAvatar, article } = props.currentBlog
 
 
   return (
@@ -16,13 +14,11 @@ export default function BlogComponent(props:IProps) {
         <div className="container">
             <div className="blog__Content">
                 <div className="blog__media">
-                    <img src={Avatar} alt={title} />
-                    <h3>{props.currentBlog.author}</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvV7PmZEa4c7heXjMTbsf2WBXuHz_lS8wURA&usqp=CAU" alt="Аватар" />
+                    <h3>Іван Петрович</h3> 
                 </div>
                 <article className="blog__article">
-                    {article.map((article, index) => (
-                        <BlogParagraph key={index} article={article}/>
-                    ))}
+                    <h4>{props.currentBlog.message}</h4>
                 </article>
             </div>
         </div>

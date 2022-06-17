@@ -81,6 +81,11 @@ h2{
 
 }
 
+.error__title{
+  text-align: center;
+  width: 100%;
+}
+
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -105,4 +110,72 @@ h2{
     font-size: 28px;
     line-height: 34px;
   }
+}
+
+.heroContent .heroOfferConstruction .heroOfferConstruction__button,
+.contactForm__content .main__content .contactForm__main .formButton,
+.heroPets__content .heroPets__button,
+.heroHelpPage__content .heroHelpPage__button{
+  transition: all .3s ease-out;
+  border: 1px solid #FF5C5C;
+  transition-delay:.1s ;
+}
+.heroContent .heroOfferConstruction .heroOfferConstruction__button:hover,
+.contactForm__content .main__content .contactForm__main .formButton:hover,
+.heroPets__content .heroPets__button:hover,
+.heroHelpPage__content .heroHelpPage__button:hover{
+  background-color: transparent;
+  border: 1px solid #FF5C5C;
+}
+
+.admin__teamComponent .admin__teamAction .admin__actionButton,
+.admin__petsComponent .admin__teamAction .admin__actionButton,
+.admin__teamComponent .admin__blogAction .admin__actionButton{
+  transition: all .3s ease-out;
+  border: 1px solid #FF5C5C;
+  transition-delay:.1s ;
+}
+
+.admin__teamComponent .admin__teamAction .admin__actionButton:hover,
+.admin__petsComponent .admin__teamAction .admin__actionButton:hover,
+.admin__teamComponent .admin__blogAction .admin__actionButton:hover{
+  background-color: transparent;
+  border: 1px solid #FF5C5C;
+  color: #1c1c1c;
+}
+
+.blogList__content .blogList__action .blogList__button{
+  transition: all .2s ease-in;
+  transition-delay:.1s ;
+}
+
+
+.blogList__content .blogList__action .blogList__button:hover{
+  background-color: #FFBF45;
+  color: #fff;
+}
+
+.helpComponent__Content .helpComponent__list .helpComponent__card .card__content button,
+.homePetsComponent__content .homePetsComponent__list .petCard .petCard__content .petCard__action .petCard__button,
+.petsList__content .petsList__list  .petCard .petCard__content .petCard__action .petCard__button{
+  transition: all .2s ease-in;
+  transition-delay:.1s ;
+}
+
+.homePetsComponent__content .homePetsComponent__list .petCard .petCard__content .petCard__action .petCard__button:hover,
+.petsList__content .petsList__list  .petCard .petCard__content .petCard__action .petCard__button:hover{
+  transform: scale(1.1);
+}
+
+.homePetsComponent__content .homePetsComponent__action .homePetsComponent__button,
+.teamComponent__content .teamComponent__action .teamComponent__button{
+  border: 1px solid #FFBF45;
+  transition: all .2s ease-in;
+  transition-delay:.1s ;
+}
+
+.homePetsComponent__content .homePetsComponent__action .homePetsComponent__button:hover,
+.teamComponent__content .teamComponent__action .teamComponent__button:hover{
+  background-color: transparent;
+  border: 1px solid #FFBF45;
 }

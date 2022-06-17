@@ -2,9 +2,14 @@ import React from 'react';
 import BlogsData from '../../fakeData/blogsData.json';
 import BlogListItem from './blogListItem';
 import './blogListComponent'
+import { BLOG } from '../../route/Routes';
+import { Link } from 'react-router-dom';
 
+interface IProps{
+    blogs: IBlogs[];
+}
 
-export default function BlogListComponent() {
+export default function BlogListComponent(props:IProps) {
 
   return (
     <div className="blogListComponent">
@@ -14,19 +19,17 @@ export default function BlogListComponent() {
                     <h2>Наш блог</h2>
                 </div>
                 <div className="blogList__mainList">
-                    {BlogsData.blogs.map((card:any, index:number) =>(
+                    {props.blogs.sort((a, b) => a.id < b.id ? 1 : -1).slice(0,3).map((blog:any, index:number) =>(
                         <BlogListItem
                             key={index}
-                            title={card.title}
-                            date={card.date}
-                            link={card.link}
+                            blog={blog}
                         />
                         ))}
                 </div>
                 <div className="blogList__action">
-                    <button className="blogList__button">
+                    <Link to={BLOG} className="blogList__button">
                         Читати більше
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

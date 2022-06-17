@@ -2,10 +2,7 @@ import React from 'react';
 import Avatar from '../../images/avatar.jpg'
 
 interface IProps{
-  id:number
-  name:string;
-  job:string;
-  image:any;
+  member: ITeam;
 }
 
 export default function MemberCard(props: IProps) {
@@ -14,11 +11,12 @@ export default function MemberCard(props: IProps) {
 
     <article className='member__card'>
       <div className="card__media">
-        <img src={Avatar} alt={props.name} />
+        <img src={props.member.avatar} alt={props.member.name} />
       </div>
       <div className="card__content">
-        <h3 className="card__title">{props.name}</h3>
-        <p className="card__description">{props.job}</p>
+        <h3 className="card__title">{props.member.name}</h3>
+        <p className="card__description">{props.member.job}</p>
+        <p className="card__description">{props.member.phoneNumber}</p>
       </div>
     </article>
   )

@@ -16,7 +16,7 @@
             .adopt__carousel{
                 padding: 8% 0;
                     .condition__card{
-                        margin: 0 1%;
+                        margin: 0 .5%;
                         width: 270px;
                         min-height: 284px;
                         border-radius: 15px;
@@ -72,4 +72,32 @@
 }
 .react-multiple-carousel__arrow--right{
     right: 0 !important;
+}
+
+
+@media screen and (max-width: 1199px) {
+
+}
+
+@media screen and (max-width: 991px) {
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    .adoptConditions__content .adoptCondition__topContent .adoptConditions__main{
+        width: 95%;
+    }
+
+}
+@media screen and (max-width: 575px) {
+
+}
+
+
+@media screen and (max-width: 375px) {
+    .adoptConditions__content .adoptConditions__title h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
 }

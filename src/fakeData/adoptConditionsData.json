@@ -3,17 +3,32 @@
         {
             "title":"Тільки власник",
             "description":"Собаку може взяти тільки майбутній власник",
-            "image":"image"
+            "image":"https://i.imgur.com/Fos2HOx.jpeg"
         },
         {
             "title":"Собака для сім’ї",
             "description":"Тільки для люблячих людей, які розуміють, що тварина - жива істота",
-            "image":"image"
+            "image":"https://i.imgur.com/0MBZLxE.jpeg"
         },
         {
             "title":"Належні умови",
             "description":"Собаки не для життя на підприємтсві, самовигулу, утримання на ланцюгу",
-            "image":"image"
+            "image":"https://i.imgur.com/8LPmME0.jpeg"
+        },
+        {
+            "title":"Договір з притулком",
+            "description":"З майбутнім власником ми укладаємо договір який міститиме особисті дані про власника та деталі про власника",
+            "image":"https://i.imgur.com/CunYmA1.jpeg"
+        },
+        {
+            "title":"Зв'язок з притулком",
+            "description":"Перший час ми цікавимося як собаці в новій сім’ї, просимо надсилати фото, допомагаємо порадами",
+            "image":"https://i.imgur.com/hM6qQgM.jpeg"
+        },
+        {
+            "title":"Стерилізація",
+            "description":"Стерилізація — обов’язкова умова для цуценят, після досягнення певного віку",
+            "image":"https://i.imgur.com/IJzbxUJ.jpeg"
         }
     ]
 }

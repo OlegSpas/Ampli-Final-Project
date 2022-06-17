@@ -4,21 +4,24 @@ import PetCarouselItem from './petCarouselItem';
 
 
 interface IProps{
-    images:{
-        image:any;
-    }[];
+    images:IImage[];
 }
 
 export default function ImagePetBlog(props:IProps) {
 
-    const [ currentImage, setCurrentImage ] = React.useState(props.images[0].image);
+    const [ currentImage, setCurrentImage ] = React.useState(props.images[0].url);
     const [isActiveButtons, setActiveButtons] = React.useState(props.images.map( (_,index) => index === 0 ? true : false));
    
+    React.useEffect(() => {
+        setCurrentImage(props.images[0].url);
+    },[props.images[0].url])  
+
     const setActive = (index:number) => {
         const activeButtons = props.images.map( () => false);
         activeButtons[index] = true;
         setActiveButtons(activeButtons)
       }
+
 
   return (
     <div className='petPage__ImageBlock'>
@@ -40,26 +43,26 @@ export default function ImagePetBlog(props:IProps) {
                 desktop: {
                 breakpoint: {
                     max: 3000,
-                    min: 1024
+                    min: 1200
                 },
                 items: 3,
                 partialVisibilityGutter: 40
                 },
                 mobile: {
                 breakpoint: {
-                    max: 464,
+                    max: 375,
                     min: 0
                 },
-                items: 1,
-                partialVisibilityGutter: 30
+                items: 2,
+                partialVisibilityGutter: 40
                 },
                 tablet: {
                 breakpoint: {
-                    max: 1024,
-                    min: 464
+                    max: 1199,
+                    min: 376
                 },
-                items: 2,
-                partialVisibilityGutter: 30
+                items: 3,
+                partialVisibilityGutter: 40
                 }
             }}
             showDots={true}

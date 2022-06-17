@@ -15,7 +15,7 @@ export default function FeedbackItem(props:IProps) {
 
     <>
         <div className="card__media">
-            <img src={Image} alt={props.name} />
+            <img src={props.avatar} alt={props.name} />
         </div>
         <div className="card__content">
             <div className="cardHead">

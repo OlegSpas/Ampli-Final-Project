@@ -2,9 +2,7 @@ import React from 'react';
 import TriggersIcon from '../../images/triggersItem.svg'
 
 interface IProps{
-    title:string;
-    description:string;
-    color:string;
+  card: ITriggers;
 }
 
 
@@ -12,13 +10,12 @@ export default function TriggersItem(props:IProps) {
 
   return (
     <div className="triggersList__item">
-        {/* <div className="triggersCard__img "> */}
-        <div className={`triggersCard__img ${props.color}`}>
-            <img src={TriggersIcon} alt={props.title} />
+        <div className={`triggersCard__img ${props.card.color}`}>
+            <img src={props.card.image} alt={props.card.title} />
         </div>
         <div className="triggersCard__content">
-            <h3>{props.title}</h3>
-            <p>{props.description}</p>
+            <h3>{props.card.title}</h3>
+            <p>{props.card.description}</p>
         </div>
     </div>
   )

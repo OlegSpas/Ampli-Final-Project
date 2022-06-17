@@ -7,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     height: 100vh;
+    max-height: 900px;
+    min-height: 600px;
     .heroOfferConstruction{
         width: 36%;
         .heroOfferConstruction__title{
@@ -18,12 +20,15 @@
             font-family: 'Montserrat Medium';
             font-size: 16px;
             line-height: 27px;
-            margin-bottom: 9%;
+            margin-bottom: 5%;
         }
         .heroOfferConstruction__button{
             outline:none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
             cursor: pointer;
-            border:0;
             border-radius: 5px;
             background-color: #FF5C5C;
             box-shadow: 0px 9px 50px 0px #ff615c4d;
@@ -36,8 +41,15 @@
         }
     }
     .heroImage{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        overflow: hidden;
         .heroImage__img{
-
+            position: relative;
+            bottom: -11%;
+            right: 0;
+            height: 90%;
         }
     }
 }
@@ -49,6 +61,9 @@
             width: 45%;
         }
     }
+    .heroContent .heroImage .heroImage__img{
+        height: 80%;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -59,6 +74,10 @@
         .heroOfferConstruction{
             width: 80%;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
         }
     }
     .heroContent .heroOfferConstruction .heroOfferConstruction__title{
@@ -66,6 +85,9 @@
     }
     .heroContent .heroOfferConstruction .heroOfferConstruction__subTitle{
         margin-bottom: 3%;
+    }
+    .heroContent .heroImage{
+        display: none;
     }
 }
 

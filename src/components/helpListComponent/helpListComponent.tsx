@@ -16,32 +16,28 @@ export default function HelpListComponent() {
   
   const handleOpenTeamPopup = () =>{
     setActiveTeamPopup(true);
-    document.body.style.overflow = 'hidden';
-}
-
+  }
 const handleCloseTeamPopup = () =>{
   setActiveTeamPopup(false);
-  document.body.style.overflow = 'visible';
 }
+
 
 const handleOpenMoneyPopup = () =>{
   setActiveMoneyPopup(true);
-  document.body.style.overflow = 'hidden';
 }
 
 const handleCloseMoneyPopup = () =>{
   setActiveMoneyPopup(false);
-  document.body.style.overflow = 'visible';
+
 }
 
 const handleOpenResPopup = () =>{
   setActiveResPopup(true);
-  document.body.style.overflow = 'hidden';
+
 }
 
 const handleCloseResPopup = () =>{
   setActiveResPopup(false);
-document.body.style.overflow = 'visible';
 }
 
   return (

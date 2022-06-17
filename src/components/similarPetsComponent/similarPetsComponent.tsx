@@ -9,22 +9,12 @@ import './similarPetsComponent.scss';
 
 
 interface IProps{
-    currentPet:{
-        id: number;
-        name: string;
-        age: string;
-        sex: string;
-        size: string;
-        type: string;
-        petDescription: string;
-        images: {
-            image: any;
-        }[];
-    }
+    currentPet:IPet;
+    pets: IPet[];
 }
 
 export default function SimilarPetsComponent(props:IProps) {
-    const [ similarPets, setSimilarPets ] = React.useState(PetsData.pets);
+    const [ similarPets, setSimilarPets ] = React.useState(props.pets);
 
     const shuffle = (array:any) => {
         let currentIndex = array.length,  randomIndex;      
@@ -45,7 +35,7 @@ export default function SimilarPetsComponent(props:IProps) {
       }
 
       React.useEffect(() => {
-        const pets = PetsData.pets;
+        const pets = props.pets;
         const filteredPets = new Array;
     
         pets.forEach((pet) => {
@@ -66,10 +56,8 @@ export default function SimilarPetsComponent(props:IProps) {
                 </h2>
                 <div className="similarPets__list">
                     {similarPets.slice(0,4).map((pet, index) => (
-                            <Link className='petsList__cardLink' key={index} to={{pathname:`${ADOPTION}/${pet.id}`}}>
-                                <PetsCard key={index} pet={pet}/>
-                            </Link>
-                        ))}
+                      <PetsCard key={index} pet={pet}/>
+                    ))}
                 </div>
             </div>
         </div>

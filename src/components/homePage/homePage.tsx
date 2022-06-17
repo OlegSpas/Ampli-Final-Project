@@ -8,7 +8,12 @@ import Triggers from '../triggers/triggers';
 
 
 
-export default function HomePage() {
+interface IProps{
+  pets:IPet[];
+  blogs: IBlogs[];
+}
+
+export default function HomePage(props: IProps) {
 
   return (
       <>
@@ -16,8 +21,8 @@ export default function HomePage() {
         <Triggers/>
         <AboutShelderComponent/>
         <HelpComponent/>
-        <BlogListComponent/>
-        <HomePetsListComponent/>
+        <BlogListComponent blogs={props.blogs}/>
+        <HomePetsListComponent pets={props.pets}/>
         <ContactForm/>
       </>
   )

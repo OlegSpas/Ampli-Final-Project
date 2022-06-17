@@ -1,4 +1,10 @@
 .mainGoogleMap{
     width: 100%;
-    height: 65vh;
+    height: 60vh;
+}
+
+@media screen and (max-width: 575px) {
+    .mainGoogleMap{
+        height: 80vh;
+    }
 }

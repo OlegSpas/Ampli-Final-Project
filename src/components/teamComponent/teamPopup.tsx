@@ -5,7 +5,7 @@ import TeamData from '../../fakeData/teamData.json';
 
 interface IProps{
   close:() => void;
-
+  team: ITeam[];
 }
 
 // Добавити заборону виключання при наведенні
@@ -22,8 +22,8 @@ export default function TeamPopup(props:IProps) {
   return (
     <div className='teamComponent__popup' onClick={handleClose}>
         <div className="mainPopup">
-          {TeamData.members.map((item, index) => (
-            <MemberCard key={index} {...item}/>
+          {props.team.map((member, index) => (
+            <MemberCard key={index} member={member}/>
           ))}
         </div>
     </div>

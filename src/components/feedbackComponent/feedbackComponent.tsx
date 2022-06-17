@@ -39,23 +39,23 @@ export default function FeedbackComponent() {
                                 desktop: {
                                 breakpoint: {
                                     max: 3000,
-                                    min: 1024
+                                    min: 1200
                                 },
                                 items: 1,
                                 partialVisibilityGutter: 40
                                 },
                                 mobile: {
                                 breakpoint: {
-                                    max: 464,
+                                    max: 375,
                                     min: 0
                                 },
                                 items: 1,
-                                partialVisibilityGutter: 30
+                                partialVisibilityGutter: 40
                                 },
                                 tablet: {
                                 breakpoint: {
-                                    max: 1024,
-                                    min: 464
+                                    max: 1199,
+                                    min: 376
                                 },
                                 items: 1,
                                 partialVisibilityGutter: 30

@@ -2,69 +2,91 @@
     "members":[
         {
             "id":0,
-            "name":"Іван Шевченко",
+            "name":"Василь Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":1,
-            "name":"Іван Шевченко",
+            "name":"Петро Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":2,
             "name":"Іван Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":3,
-            "name":"Іван Шевченко",
+            "name":"Любомир Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":4,
-            "name":"Іван Шевченко",
+            "name":"Остап Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":5,
-            "name":"Іван Шевченко",
+            "name":"Андрій Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":6,
-            "name":"Іван Шевченко",
+            "name":"Максим Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":7,
-            "name":"Іван Шевченко",
+            "name":"Данило Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":8,
-            "name":"Іван Шевченко",
+            "name":"Микола Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":9,
-            "name":"Іван Шевченко",
+            "name":"Тарас Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         },
         {
             "id":10,
             "name":"Іван Шевченко",
             "job":"Директор притулку “Happy Paw”",
-            "image":"image"
+            "image":"image",
+            "phoneNumber":"+380 99 781 9142",
+            "gmail":"vasyl@gmail.com"
         }
     ]
 }

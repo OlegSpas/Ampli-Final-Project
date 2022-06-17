@@ -1,7 +1,7 @@
 import React from 'react';
 import { PetSelects } from '../../route/petSelects';
 import SearchIcon from '../../images/search.svg';
-import PetsListSelect from './blogListSelect';
+import PetsListSelect from './petsListSelect';
 
 interface IProps{
     foundPets:any;

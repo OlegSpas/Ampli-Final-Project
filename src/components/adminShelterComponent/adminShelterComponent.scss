@@ -1,0 +1,177 @@
+.admin__shelterComponent{
+    margin: 7% 0;
+    .admin__shelterTables{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .admin__shelterTable{
+            margin-top: 5%;
+            width: 47%;
+            .admin__tableTitle{
+                font-family: 'Montserrat Black';
+                font-size: 30px;
+                line-height: 30px;
+            }
+            .shelterTableContent{
+                margin-top: 15px;
+                background-color: #fff;
+                box-shadow: 4px 5px 10px 0px #00000040;
+                border-radius: 8px;
+                min-height: 245px;
+                max-height: 245px;
+                padding: 30px 25px;
+                overflow-y: auto;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                &::-webkit-scrollbar{
+                    width: 6px;
+                    width: 11px;
+                    border-radius: 20px;
+                }
+                &::-webkit-scrollbar-track{
+                    width: 6px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #aaaaaa;
+                    border-radius: 30px;
+                  }
+
+                .shelter__element{
+                    margin-top: 3%;
+                    &:first-of-type{
+                        margin-top: 0;
+                    }
+                    .infoTitle{
+                        font-family: 'Montserrat Bold';
+                        font-size: 18px;
+                        line-height: 23px;   
+                        margin-bottom: 1%;                  
+                    }
+                    .info__element{
+                        border-radius: 10px;
+                        border: 1px solid #1c1c1c;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 2% 5%;
+                        min-height: 55px;
+                        width: 100%;
+                        .info__value{
+                            font-family: 'Montserrat Medium';
+                            font-size: 16px;
+                            line-height: 20px;                    
+                        }
+                        .info__action{
+                            background-color: transparent;
+                            border:0;
+                            outline: none;
+                            cursor: pointer;
+                            .action__icon{
+                                height: 20px;
+                                width: 20px;
+                                -webkit-user-drag: none;
+                            }
+                        }
+                    }
+                }
+                .triggersList__item{
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin: 5% 0;
+                    &:last-of-type,
+                    &:first-of-type{
+                        margin: 0;
+                    }
+                    .card__content{
+                        width: 80px;
+                        height: 77px;
+                        display: flex;
+                        justify-content: space-between;
+                        width: 90%;
+                        .triggersCard__img{
+                            width: 80px;
+                            height: 77px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 15px;
+                            img{
+                                height: 66px;
+                                width: 62px;
+            
+                            }
+                        }
+                        .triggersCard__content{
+                            width: 72%;
+                            h3{
+                                font-family: 'Montserrat ExtraBold';
+                                font-size: 22px;
+                                font-style: normal;
+                                font-weight: 800;
+                                line-height: 27px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                margin-bottom: 2%;
+                                
+                            }
+                            p{
+                                font-family: 'Montserrat Regular';
+                                font-size: 18px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: 23px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                    
+                            }
+                        }
+                    }
+
+                    .info__action{
+                        background-color: transparent;
+                        border:0;
+                        outline: none;
+                        cursor: pointer;
+                        .action__icon{
+                            height: 20px;
+                            width: 20px;
+                            -webkit-user-drag: none;
+                        }
+                    }
+        
+                    .green{
+                        background-color: #98F1A6;
+                    }
+                    .red{
+                        background-color: #F19898;
+                    }
+                    .blue{
+                        background-color: #98C1F1;
+                    }
+                }
+
+                .table__actionBtn{
+                    align-self: flex-end;
+                    background-color: transparent;
+                    outline: none;
+                    border: 0;
+                    cursor: pointer;
+
+                    .actionIcon{
+                        height: 30px;
+                        width: 30px;
+                        color:#FFBF45 ;
+                        -webkit-user-drag: none;
+                        position: absolute;
+                        top: 5%;
+                        right: 5%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,8 @@
 import React from 'react';
 import './triggers.scss'
 import TriggersItem from './triggersItem';
-import TriggerData from '../../fakeData/triggersData.json'
+// import TriggerData from '../../fakeData/triggersData.json';
+import {TriggersList} from '../../route/triggers'
 
 
 
@@ -15,12 +16,10 @@ export default function Triggers() {
                       <h2 className="triggersTitle__h2">Чому це важливо?</h2>
                   </div>
                   <div className="triggersList">
-                      {TriggerData.triggers.map((card:any, index:number) =>(
+                      {TriggersList.map((card:any, index:number) =>(
                           <TriggersItem 
                             key={index}
-                            title={card.title}
-                            description={card.description}
-                            color={card.color}
+                            card={card}
                             />
                       ))}
                   </div>

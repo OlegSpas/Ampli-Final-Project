@@ -1,39 +1,27 @@
 import React from 'react';
 import ImagePetBlog from './imagePetBlock';
 import "react-multi-carousel/lib/styles.css";
-import './aboutPageComponent.scss';
+import './aboutPetComponent.scss';
 import { PetCharacteristic } from '../../route/petCharacteristic';
 import AdoptionPopup from '../actionPopups/adoptPopup';
 
 
 interface IProps{
-    currentPet:{
-        id: number;
-        name: string;
-        age: string;
-        sex: string;
-        size: string;
-        type: string;
-        petDescription: string;
-        images: {
-            image: any;
-        }[];
-    }
+    currentPet: IPet;
 }
 
 
 export default function AboutPageComponent(props:IProps) {
     const [ isOpenAdoptionPopup, setOpenAdoptionPopup ] = React.useState(false);
-    const { id, name, age, sex, size, type, petDescription, images} = props.currentPet;
+    const { name, age, sex, size, type, description, images} = props.currentPet;
 
     const handleOpenAdoptionPopup = () =>{
         setOpenAdoptionPopup(true);
-        document.body.style.overflow = 'hidden';
     }
 
     const handleCloseAdoptionPopup = () =>{
         setOpenAdoptionPopup(false);
-        document.body.style.overflow = 'visible';
+
     }
 
   return (
@@ -68,9 +56,9 @@ export default function AboutPageComponent(props:IProps) {
                     </div>
                     <div className="petPage__description">
                         <h2 className='petPage__descriptionSubTitle'>Про тварину</h2>
-                        <p className='petPage__petDescription'>{petDescription}</p>
+                        <p className='petPage__petDescription'>{description}</p>
                     </div>
-                    { isOpenAdoptionPopup && <AdoptionPopup close={handleCloseAdoptionPopup}/>}
+                    { isOpenAdoptionPopup && <AdoptionPopup currentPet={props.currentPet} close={handleCloseAdoptionPopup}/>}
                 </div>
             </div>
         </div>

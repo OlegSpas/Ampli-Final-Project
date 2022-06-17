@@ -60,3 +60,54 @@
         }
     }
 }
+
+@media screen and (max-width: 1199px) {
+    .feedback__content .feedback__topContent .feedback__main{
+        width: 85%;
+    }
+    .feedback__content .feedback__topContent .feedback__main .feedback__carousel .feedback__card{
+        height: 300px;
+    }
+    .feedback__content .feedback__topContent .feedback__main .react-multiple-carousel__arrow{
+        bottom: 15%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    
+}
+
+@media screen and (max-width: 767px) {
+    .feedback__content .feedback__topContent .feedback__main{
+        width: 95%;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .feedback__content .feedback__topContent .feedback__main .feedback__carousel .feedback__card{
+        flex-direction: column;
+    }
+
+    .feedback__content .feedback__topContent .feedback__main .feedback__carousel .feedback__card .card__media{
+        margin-left: 0;
+        margin-top: 5%;
+    }
+    .feedback__content .feedback__topContent .feedback__main .feedback__carousel .feedback__card .card__media img{
+        width: 100px;
+        height: 100px;
+    }
+    .feedback__content .feedback__topContent .feedback__main .feedback__carousel .feedback__card{
+        height: 350px;
+    }
+    .feedback__content .feedback__topContent .feedback__main{
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .feedback__content .feedback__topContent .feedback__main .feedback__carousel .feedback__card{
+        height: 450px;
+    }
+}

@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-end;
     height: 50vh;
-    width: 50%;
+    width: 55%;
     padding-bottom: 4%;
         .heroBlog__title{
             font-family: 'Montserrat Black';
@@ -21,4 +21,37 @@
             line-height: 16px;    
             width: 67%;    
         }
+}
+
+@media screen and (max-width: 991px) {
+    .heroBlog__content{
+        margin-left: 2.5%;
+    }
+    .heroBlog__content{
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .heroBlog__content{
+        width: 90%;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .heroBlog__content .heroBlog__title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .heroBlog__content .heroBlog__description{
+        width: 80%;
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    .heroBlog__content .heroBlog__title{
+        font-size: 28px;
+        line-height: 30px;
+    }
 }

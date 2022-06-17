@@ -3,6 +3,7 @@
         justify-content: space-evenly;
         padding: 7% 0;
         .helpList__card{
+            cursor: pointer;
             display: flex;
             flex-direction: column;
             max-width: 330px;
@@ -69,7 +70,7 @@
             .mainPopup{
                 background-color: #fff;
                 padding: 2% 2%;
-                height: 750px;
+                height: 90%;
                 width: 90%;
                 max-width: 1300px;
                 display: flex;
@@ -90,7 +91,7 @@
                     border-radius: 30px;
                   }
                   .form__popup{
-                      width: 52%;
+                      width: 55%;
                       max-width: 570px;
                       .formData{
                         display: flex;
@@ -175,8 +176,16 @@
                             }
                         }
                     }
+                    .warningMessage{
+                        font-family: 'Montserrat Black';
+                        font-size: 30px;
+                        line-height: 30px;
+                        color: #f52456;
+                        margin-top: 5%;
+                        margin-bottom: 2%;
+                    }
                     .formActions{
-                        margin-top: 7%;
+                        margin-top: 0%;
                         display: flex;
                         justify-content: space-between;
                         .form__button{
@@ -235,3 +244,88 @@
             }
         }
     }
+    @media screen and (max-width: 1199px) {
+        .helpList__content .helpList__card{
+            max-width: 280px;
+        }
+        .helpList__content .help__popup .mainPopup .form__popup{
+            width: 45%;
+        }
+        .helpList__content .help__popup .mainPopup .form__popup .formData .form__input,
+        .helpList__content .help__popup .mainPopup .form__popup .formData .form__select{
+        
+            width: 100%;
+        }
+        .helpList__content .help__popup .mainPopup .popup__content{
+            width: 50%;
+        }
+        .helpList__content .help__popup .mainPopup .form__popup .formMessage .form__item .form__textarea{
+            height: 120px;
+        }
+    }
+    
+    @media screen and (max-width: 991px) {
+        .helpList__content{
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            justify-content: center;
+        }
+        .helpList__content .helpList__card{
+            max-width: 350px;
+            margin: 2.5% 2%;
+        }
+        .helpList__content .help__popup .mainPopup{
+            flex-direction: column-reverse;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+        .helpList__content .help__popup .mainPopup .popup__content,
+        .helpList__content .help__popup .mainPopup .form__popup{
+            width: 100%;
+        }
+        .helpList__content .help__popup .mainPopup .form__popup .formData .form__input, 
+        .helpList__content .help__popup .mainPopup .form__popup .formData .form__select{
+            width: 270px;
+        }
+        .helpList__content .help__popup .mainPopup .form__popup{
+            margin-top: 5%;
+        }
+    }
+    
+    
+    @media screen and (max-width: 767px) {
+        .helpList__content{
+            justify-content: center;
+        }
+        .helpList__content .helpList__card{
+            width: 90%;
+            max-width: 90%;
+        }
+        .helpList__content .helpList__card .card__image img{
+            height: 250px;
+        }
+        .helpList__content .helpList__card button{
+            margin-top: 1%;
+        }
+        .helpList__content .help__popup .mainPopup .form__popup .formData .form__input, 
+        .helpList__content .help__popup .mainPopup .form__popup .formData .form__select{
+            width: 100%;
+        }
+    }
+    
+    @media screen and (max-width: 575px) {
+        .helpList__content .helpList__card .card__image img{
+            height: 200px;
+        }
+    }
+    
+    @media screen and (max-width: 375px) {
+        .helpList__content .helpList__card .card__image img{
+            height: auto;
+        }
+        .helpList__content .helpList__card .card__content{
+            height: 50%;
+        }
+    }
+    
+    

@@ -1,10 +1,7 @@
 import "react-multi-carousel/lib/styles.css";
-import './aboutPageComponent.scss';
 
 interface IProps{
-    image: {
-        image:any
-    };
+    image: IImage;
     setCurrentImage: (value:any) => void;
     setActive: () => void;
     isActive: boolean;
@@ -14,14 +11,14 @@ interface IProps{
 export default function PetCarouselItem(props:IProps) {
 
     const handleSetCurrentImage = () =>{
-        props.setCurrentImage(props.image.image);
+        props.setCurrentImage(props.image.url);
         props.setActive();
     }
 
 
   return (
     <>
-        <img src={props.image.image} alt="adopt pet"  className={`petCarousel__img ${props.isActive ? 'active' : ''}`} onClick={handleSetCurrentImage}/>
+        <img src={props.image.url} alt="adopt pet"  className={`petCarousel__img ${props.isActive ? 'active' : ''}`} onClick={handleSetCurrentImage}/>
     </>
   )
 }

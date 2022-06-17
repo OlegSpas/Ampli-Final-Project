@@ -1,0 +1,78 @@
+.warning__popup{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0%;
+    right:0;
+    z-index: 9999;
+    background-color: #1a1a1a80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scrollbar-width: 3px;
+    opacity: 0;
+    animation: 3s linear infinite poyava;
+    .mainPopup{
+        width: 450px;
+        height: 350px;
+        background-color: white;
+        margin: auto;
+        border: 0 solid;
+        border-radius: 5px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img{
+            height: 200px;
+            width: 200px;
+        }
+        h2{
+            font-family: 'Montserrat Black';
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: 41px;
+            letter-spacing: 0em;
+            text-align: left;
+            margin-top: 5%;
+            text-align: center;
+        
+        }
+        
+    }
+    
+}
+
+@media screen and (max-width: 575px){
+    .warning__popup .mainPopup{
+        width: 270px;
+        height: 220px;
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 26px;
+        }
+    }
+}
+
+@keyframes poyava {
+    0% {
+      opacity: 1;
+      background-color: #00000061;
+    }
+    70% {
+      opacity: 1;
+      background-color: #00000061;
+    }
+    99% {
+      background-color: #00000044;
+    }
+    100% {
+      background-color: #00000044;
+    }
+  }

@@ -16,20 +16,9 @@ export default class GoogleMap extends Component {
   render() {
     return (
       // Important! Always set the container height explicitly
-      <div className='mainGoogleMap'>
-        <GoogleMapReact
-          // bootstrapURLKeys={{ key: 'AIzaSyBzzi6JLW1NZIPdeQPrrFq2Hj8W9PwNyto'}}
-          yesIWantToUseGoogleMapApiInternals
-          defaultCenter={this.props.center}
-          defaultZoom={this.props.zoom}
-        >
-          <AnyReactComponent
-            lat={46.693885}
-            lng={32.545922}
-            // text="My Marker"
-          />
-        </GoogleMapReact>
-      </div>
+      // <div className='mainGoogleMap'>
+        <iframe className='mainGoogleMap' src="https://www.google.com/maps/d/u/0/embed?mid=1sEZgiS_JT71fr5ExQUa4d8fajsNya4I&ehbc=2E312F"></iframe>
+      // {/* </div> */}
     );
   }
 }

@@ -8,7 +8,7 @@ export default function HeroBlog() {
   return (
       <section id='HeroBlog'>
           <div className="container">
-              <div className="heroBlog__content">
+              <div className="heroBlogList__content">
                     <h1 className="heroBlog__title">
                         Блог
                     </h1>

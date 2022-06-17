@@ -2,31 +2,34 @@
     background: linear-gradient(112.86deg, #FFBF45 9.58%, #FF9C41 90.39%);
 }
 
-.heroBlog__content{
+.heroPets__content{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 60vh;
     width: 50%;
     padding-bottom: 4%;
-        .heroBlog__title{
+        .heroPets__title{
             font-family: 'Montserrat Black';
             font-size: 40px;
             line-height: 49px;     
             margin-bottom: 2%;      
         }
-        .heroBlog__description{
+        .heroPets__description{
             font-family: 'Montserrat Medium';
             font-size: 16px;
             line-height: 16px;    
             width: 70%;    
             margin-bottom: .3%;
         }
-        .heroBlog__button{
+        .heroPets__button{
             margin-top: 5%;
             outline:none;
+            text-decoration: none;
+            justify-content: center;
+            align-items: center;
+            display: flex;
             cursor: pointer;
-            border:0;
             border-radius: 5px;
             background-color: #FF5C5C;
             box-shadow: 0px 9px 50px 0px #ff615c4d;
@@ -39,51 +42,51 @@
         }
 }
 @media screen and (max-width: 1199px) {
-    .heroBlog__content{
+    .heroPets__content{
         margin-left: 3.5%;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .heroBlog__content{
+    .heroPets__content{
         width:70%;
     }
 }
 
 
 @media screen and (max-width: 767px) {
-    .heroBlog__content{
+    .heroPets__content{
         width:90%;
     }
     
 }
 
 @media screen and (max-width: 575px) {
-    .heroBlog__content{
+    .heroPets__content{
         padding-bottom: 7%;
-        width:100%;
+        width:90%;
     }
-    .heroBlog__content .heroBlog__description{
+    .heroPets__content .heroPets__description{
         width: 100%;
     }
-    .heroBlog__content .heroBlog__title{
+    .heroPets__content .heroPets__title{
         font-size: 36px;
         line-height: 40px;
     }
 }
 
 @media screen and (max-width: 375px) {
-    .heroBlog__content .heroBlog__button{
+    .heroPets__content .heroPets__button{
         width: 90%;
     }
-    .heroBlog__content{
+    .heroPets__content{
         width: 90%;
     }
-    .heroBlog__content .heroBlog__title{
+    .heroPets__content .heroPets__title{
         font-size: 32px;
         line-height: 40px;
     }
-    .heroBlog__content .heroBlog__description{
+    .heroPets__content .heroPets__description{
         font-size: 14px;
         line-height: 14px;
     }

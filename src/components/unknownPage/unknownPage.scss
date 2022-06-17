@@ -1,0 +1,44 @@
+.unknownPage__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15% 0;
+    .page__title{
+        text-align: center;
+        font-size: 42px;
+    }
+    .page__image{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .unknownPage__content{
+        padding: 30% 0;
+        .page__title{
+            text-align: center;
+            font-size: 36px;
+        }
+        .page__image{
+            height: 400px;
+        }
+    }
+}
+@media screen and (max-width: 575px) {
+    .unknownPage__content{
+        padding: 30% 0;
+        .page__title{
+            text-align: center;
+            font-size: 36px;
+        }
+        .page__image{
+            height: 400px;
+        }
+    }
+ 
+}
+@media screen and (max-width: 375px) {
+    .unknownPage__content{
+        padding: 40% 0;
+    }
+}

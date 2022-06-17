@@ -1,18 +1,19 @@
 {
     "triggers":[
         {
-            "title":"Причина взяти**",
-            "description":"Lorem ipsum text text text text text",
-            "color":"green"
+            "title":"Життя",
+            "description":"Ви врятуєте хвостатого, ощаслививши його",
+            "color":"green",
+            "image": ""
         },
         {
-            "title":"Причина взяти**",
-            "description":"Lorem ipsum text text text text text",
+            "title":"Радість кожен день",
+            "description":"Це покращить емоційний та фізичний стан",
             "color":"red"
         },
         {
-            "title":"Причина взяти**",
-            "description":"Lorem ipsum text text text text text",
+            "title":"Виховання",
+            "description":"Хвостаті виховають вашу дитину краще вас",
             "color":"blue"
         }
     ]

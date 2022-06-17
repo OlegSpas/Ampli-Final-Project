@@ -42,3 +42,32 @@
         }
     }
 } 
+
+
+@media screen and (max-width: 991px) {
+    .blog__Content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .blog__Content .blog__article{
+        width: 95%;
+    }
+    .blog__Content .blog__media{
+        width: 25%;
+    }
+    .blog__Content .blog__media{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+@media screen and (max-width: 575px) {
+
+}
+
+
+@media screen and (max-width: 375px) {
+
+}

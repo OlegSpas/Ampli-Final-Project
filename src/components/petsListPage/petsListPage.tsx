@@ -1,12 +1,16 @@
 import HeroPetsListPage from "../heroPetsList/heroPetsList";
 import PetsList from "../petsList/petsList";
 
-export default function PetsListPage() {
+interface IProps{
+  pets:IPet[];
+}
+
+export default function PetsListPage(props:IProps) {
 
   return (
       <>
         <HeroPetsListPage/>
-        <PetsList/>
+        <PetsList pets={props.pets}/>
       </>
   )
 }

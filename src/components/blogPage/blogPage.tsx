@@ -3,30 +3,30 @@ import { useLocation } from 'react-router-dom';
 import BlogComponent from '../blogComponent/blogComponent';
 import BlogData from '../../fakeData/blogListData.json'
 import HeroBlogPage from '../heroBlogPage/heroBlogPage';
+import UnknownPage from '../unknownPage/unknownPage';
 
 interface IProps {
-    match: {params:{id:number}};
+  blogs: IBlogs[];
   }
 
-interface IState{
-    blogData?: IBlog;
-}  
 
 
-export default function BlogPage(props:IProps, state: IState) {
+export default function BlogPage(props:IProps) {
 
     const location = useLocation();
     const url = location.pathname;
     const splitURL = url.split('/');
     const blogId = Number(splitURL[2]);
-    console.log(blogId)
-    const currentBlog  = BlogData.blogs[blogId]
-    console.log(currentBlog)
+    const currentBlog  = props.blogs.find((blog) => blog.id === blogId);
 
-  return (
-      <>
-        <HeroBlogPage/>
-        <BlogComponent currentBlog={currentBlog}/>
-      </>
-  )
+    if(currentBlog === undefined){
+      return <UnknownPage/>
+    } else{
+      return (
+        <>
+          <HeroBlogPage currentBlog={currentBlog!}/>
+          <BlogComponent currentBlog={currentBlog!}/>
+        </>
+    )
+    }
 }

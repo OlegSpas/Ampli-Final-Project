@@ -24,15 +24,15 @@ export default function HelpCard(props:IProps) {
     }
 
   return (
-    <div className="helpList__card">
+    <div className="helpList__card" onClick={handleOpenPopup}>
         <div className="card__image">
-            <img src={photo} alt={helpName} />
+            <img src={props.helpCard.image} alt={helpName} />
         </div>
         <div className="card__content">
             <h3>{helpName}</h3>
             <p>{helpDescription}</p>
         </div>
-        <button onClick={handleOpenPopup}>
+        <button>
             Більше
         </button>
     </div>

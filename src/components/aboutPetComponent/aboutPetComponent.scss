@@ -134,7 +134,7 @@
         .mainPopup{
             background-color: #fff;
             padding: 2% 70px;
-            height: 750px;
+            height: 80%;
             width: 100%;
             max-width: 725px;
             border-radius: 10px;
@@ -259,8 +259,16 @@
                     line-height: 16px;
                     margin-top: 3%;
                 }
+                .warningMessage{
+                    font-family: 'Montserrat Black';
+                    font-size: 30px;
+                    line-height: 30px;
+                    color: #f52456;
+                    margin-top: 5%;
+                    margin-bottom: 2%;
+                }
                 .formActions{
-                    margin-top: 2%;
+                    margin-top: 1%;
                     display: flex;
                     justify-content: space-between;
                     .form__button{
@@ -277,6 +285,10 @@
                         outline: none;
                     }
                     .secondaryButton{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        text-decoration: none;
                         background-color: transparent;
                         border: 2px solid #FFBF45;
                         color: #1C1C1C;
@@ -284,5 +296,125 @@
                 }
               }
         }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .petPage__content .petPage__ImageBlock{
+        width: 46%;
+    }
+    .petPage__mainBlock{
+        flex-direction: column ;
+    }
+    .petPage__content .petPage__AboutBlock .petPage__mainBlock .petPage__actions{
+        align-items: flex-start;
+    }
+    .petPage__content .petPage__AboutBlock {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .petPage__content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .petPage__content .petPage__ImageBlock{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+    }
+    .petPage__content .petPage__AboutBlock{
+        width: 85%;
+    }
+    .petPage__content .petPage__AboutBlock .petPage__mainBlock .petPage__petCharacteristic{
+        width: 80%;
+    }
+    .petPage__content .petPage__AboutBlock .petPage__mainBlock .petPage__actions{
+        margin-top: 5%;
+    }
+    .petPage__content .petPage__ImageBlock .petPage__currentPage{
+        width: 100%;
+        align-self: center;
+    }
+    .petPage__content .petPage__ImageBlock .petPage__carousel{
+        max-width: 550px;
+        padding: 7% 0;
+    }
+    .petPage__content .petPage__ImageBlock .petPage__carousel .react-multi-carousel-dot-list{
+        bottom: 84%;
+    }
+    .petPage__content .petPage__AboutBlock .petPage__description{
+        margin-top: 2%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .petPage__content .petPage__ImageBlock .petPage__carousel{
+        max-width: 550px;
+        padding: 10% 0;
+    }
+    .petPage__content .petPage__ImageBlock .petPage__currentPage{
+        height: auto;
+    }
+    .petPage__content .petPage__AboutBlock{
+        width: 95%;
+    }
+    .petPage__content .petPage__ImageBlock{
+        width: 80%;
+        margin-top: 10%;
+    }
+    .petPage__content .adoption__popup .mainPopup{
+        width: 90%;
+        padding: 2% 20px;
+    }
+    .petPage__content .adoption__popup .mainPopup .popup__title{
+        font-size: 30px;
+    }
+    .petPage__content .adoption__popup .mainPopup .form__popup .formData .form__input{
+        width: 100%;
+    }
+    .petPage__content .adoption__popup .mainPopup .form__popup{
+        margin-top: 5%;
+    }
+    .petPage__content .adoption__popup .mainPopup .form__popup .formActions .form__button{
+        width: 220px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+    .petPage__content .petPage__ImageBlock{
+        width: 90%;
+        margin-top: 15%;
+    }
+    .petPage__content .adoption__popup .mainPopup .form__popup .formActions{
+        flex-direction: column;
+    }
+    .petPage__content .adoption__popup .mainPopup .form__popup .formActions .form__button{
+        width: 95%;
+        align-self: center;
+        margin: 5% 0;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .petPage__content .petPage__ImageBlock .petPage__carousel .petImage__card .petCarousel__img{
+        width: 90%;
+    }
+    .petPage__content .petPage__ImageBlock .petPage__carousel .petImage__card{
+        height: 80px;
+        width: 80px;        
+    }
+    .petPage__content .petPage__AboutBlock .petPage__description{
+        margin-top: 10%;
+    }
+    .petPage__content .petPage__AboutBlock .petPage__petName{
+        font-size: 36px;
+    }
+    .petPage__content .petPage__ImageBlock{
+        margin-top: 20%;
     }
 }

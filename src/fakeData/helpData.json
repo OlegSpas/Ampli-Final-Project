@@ -3,12 +3,14 @@
         {
             "title":"Прихисти хвостик",
             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "link":"#"
+            "link":"adopt",
+            "image":"https://i.imgur.com/mC4A4jp.jpg"
         },
         {
-            "title":"Надіслати кошти",
+            "title":"Допомогти інакше",
             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-            "link":"#"
+            "link":"help",
+            "image":"https://i.imgur.com/t9HxRhT.jpg"
         }
     ]
 }

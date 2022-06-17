@@ -1,25 +1,25 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import photo from '../../images/helpCardImg.jpg';
+import { BLOG } from '../../route/Routes';
 import './blogListComponent.scss'
 
 interface IProps{
-    title:string;
-    date:string;
-    link:string;
+ blog:IBlogs;
 }
 
 
 export default function BlogListItem(props:IProps) {
 
   return (
-    <div className="blogList__card">
+    <Link to={{pathname:`${BLOG}/${props.blog.id}`}} className="blogList__card">
         <div className="card__image">
-            <img src={photo} alt={props.title} />
+            <img src={props.blog.image} alt={props.blog.title} />
         </div>
         <div className="card__content">
-            <h3 className='card__title'>{props.title}</h3>
-            <p className='card__date'>{props.date}</p>
+            <h3 className='card__title'>{props.blog.title}</h3>
+            <p className='card__date'>{props.blog.date}</p>
         </div>
-    </div>
+    </Link>
   )
 }

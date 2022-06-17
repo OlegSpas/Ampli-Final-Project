@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import { BLOG } from '../../route/Routes';
 import './heroHelpPage.scss'
 
 
@@ -15,9 +17,9 @@ export default function HeroHelpPage() {
                     <p className="heroHelpPage__description">
                     Для того, щоб переглянути як ми використовуємо кошти, які ви надсилаєте нам - скористайтесь посиланням нижче
                     </p>
-                    <button className='heroHelpPage__button'>
+                    <Link to={BLOG} className='heroHelpPage__button'>
                         Ознайомитись
-                    </button>
+                    </Link>
               </div>
           </div>
       </section>
