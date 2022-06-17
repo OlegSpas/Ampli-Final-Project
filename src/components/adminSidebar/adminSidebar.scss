@@ -1,0 +1,61 @@
+.admin__sidebar{
+    width: 260px;
+    background-color: #FCFAFA;
+    padding: 26px 20px;
+    .sidebar__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100px;
+        .adminLogo{
+            width: 40px;
+            -webkit-user-drag: none;
+        }
+        .sidebar__actionBtn{
+            cursor: pointer;
+            background-color: transparent;
+            border: 0;
+            -webkit-user-drag: none;
+            img{
+                -webkit-user-drag: none;
+            }
+        }
+    }
+    .sidebar__navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .sidebar__subTitle{
+            font-family: 'Montserrat Bold';
+            font-size: 16px;
+            line-height: 20px;   
+            width: 100%;
+            margin-bottom: 7%;
+        }
+        .sidebar__button{
+            cursor: pointer;
+            border: 0;
+            border-radius: 8px;
+            background-color: transparent;
+            text-align: left;
+            width: 228px;
+            height: 45px;
+            padding-left: 7%;
+            margin-bottom: 3.5%;
+            font-family: 'Montserrat Medium';
+            font-size: 14px;
+            line-height: 17px;
+            display: flex;
+            align-items: center;
+            .buttonIcon{
+                height: 20px;
+                width: 20px;
+                margin-right: 5%;
+            }
+        }
+        .activeButton{
+            background-color: #FFD88C;
+        }
+    }
+}

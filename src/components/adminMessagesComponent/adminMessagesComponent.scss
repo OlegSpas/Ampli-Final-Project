@@ -1,0 +1,227 @@
+.admin__messagesComponent{
+    margin: 7% 0;
+    .admin__messageContent{
+        box-shadow: 4px 5px 10px 0px #00000040;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+        height: 650px;
+        display: flex;
+        .adminMessage__menu{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 250px;
+            width: 25%;
+            height: 100%;
+            border-right: 1px solid #1c1c1c;
+            padding: 2% 0% 0% 2%;
+            .messageMenu__button{
+                cursor: pointer;
+                width: 100%;
+                background-color: transparent;
+                border: 0;
+                outline: none;
+                font-family: 'Montserrat Bold';
+                font-size: 16px;
+                line-height: 16px;
+                height: 40px;
+                text-align: left;
+            }
+            .activeButton{
+                color: #F52456;
+            }
+        }
+        .adminMessage__select{
+            display: none;
+        }
+        .admin__mainMessageContent{
+            overflow-y: auto;
+            width: 100%;
+            .adminMessage__card{
+                width: 100%;
+                display: flex;
+                padding: 0px 30px 0 30px;
+                border-top: 1px solid #1c1c1c;
+                height: 60px;
+                align-items: center;
+                justify-content: space-between;
+                .message__author{
+                    font-family: 'Montserrat Bold';
+                    font-size: 16px;
+                    line-height: 20px;
+                    width: 25%;
+                }
+                .message__type{
+                    font-family: 'Montserrat Bold';
+                    font-size: 14px;
+                    line-height: 18px;
+                    text-align: left;
+                    width: 25%;
+                }
+                .message__text,
+                .message__date{
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .message__text{
+                    width: 41%;
+                }
+                &:first-of-type{
+                    border-top: 0;
+                }
+            }
+        }
+    }
+    .message__popup{
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        top: 0%;
+        right:0;
+        z-index: 9999;
+        background-color: #1a1a1a80;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        scrollbar-width: 3px;
+        .mainPopup{
+            background-color: #fff;
+            padding: 2% 70px;
+            height: 80%;
+            width: 90%;
+            max-width: 970px;
+            border-radius: 10px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar{
+                width: 6px;
+                width: 11px;
+                border-radius: 20px;
+            }
+            &::-webkit-scrollbar-track{
+                width: 6px;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #646464;
+                border-radius: 30px;
+              }
+              .popup__title{
+                font-family: 'Montserrat Black';
+                font-size: 32px;
+                line-height: 32px;              
+              }
+              .header__popup{
+                  display: flex;
+                  justify-content: space-between;
+                  .author__data{
+                    .author__title{
+                        display: flex;
+                        align-items: center;
+                        .author__name{
+                            font-family: 'Montserrat Bold';
+                            font-size: 18px;
+                            line-height: 23px;
+                        }
+                        .author__detail{
+                            font-family: 'Montserrat Bold';
+                            font-size: 16px;
+                            line-height: 20px;      
+                            margin-left: 15px;   
+                            color:#FF5C5C;             
+                        }
+                    }
+                    .author__contact{
+                        .author__contactMain{
+                            font-family: 'Montserrat Medium';
+                            font-size: 14px;
+                            line-height: 15px;
+                        }
+                    }
+                  }
+                  .date{
+                    .message__data{
+                        font-family: 'Montserrat Medium';
+                        font-size: 12px;
+                        line-height: 15px;
+                    }
+                  }
+              }
+              .message__content{
+                  margin-top: 5%;
+                  .messageTitle{
+                    font-family: 'Montserrat Black';
+                    font-size: 36px;
+                    line-height: 44px;
+                  }
+                  .message__text{
+                    margin-top: 4%;
+                    font-family: 'Montserrat Regular';
+                    font-size: 18px;
+                    line-height: 23px;
+                  }
+              }
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .admin__messagesComponent .admin__messageContent{
+        width: 95%;
+    }
+    .admin__messagesComponent .admin__messageContent .admin__mainMessageContent .adminMessage__card .message__text{
+        display: none;
+    }
+    .admin__messagesComponent .admin__messageContent .admin__mainMessageContent .adminMessage__card .message__author{
+        width: 35%;
+    }
+    .admin__messagesComponent .admin__messageContent .admin__mainMessageContent .adminMessage__card .message__type{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .admin__messagesComponent .admin__messageContent .adminMessage__menu{
+        display: none;
+    }
+    .admin__messagesComponent .admin__messageContent .adminMessage__select{
+        display: block;
+    }
+    .admin__messagesComponent .admin__messageContent{
+        flex-direction: column;
+    }
+    .admin__messagesComponent .admin__messageContent .adminMessage__select{
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Montserrat Medium';
+        font-size: 18px;
+        line-height: 22px;
+        color: #777777;
+        border-radius: 10px;
+        border: 1px solid #A9A9A9;
+        height: 55px;
+        width: 100%;
+        padding: 0 1.5%;
+        appearance: none;
+        background-image: url('../../images/selectArrow.svg');
+        background-repeat: no-repeat;
+        background-position-x: 98%;
+        background-position-y: 50%;
+        margin-bottom: 5%;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .admin__messagesComponent .admin__messageContent .admin__mainMessageContent .adminMessage__card .message__author{
+        display: none;
+    }
+    .admin__messagesComponent .message__popup{
+        width: 100%;
+        height: 100%;
+    }
+ 
+}
+
