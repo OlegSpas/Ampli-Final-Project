@@ -1,5 +1,4 @@
 import axios from "axios";
-import { type } from "os";
 import { backendUrl, headers } from "./constants";
 
 export const petsEndPointName = "Blogs";

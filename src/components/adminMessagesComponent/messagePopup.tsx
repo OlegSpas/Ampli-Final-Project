@@ -1,5 +1,5 @@
 import React from 'react';
-import { AddPetSelects } from '../../route/addPetSelects';
+
 interface IProps{
   close:() => void;
   adminMessage:IMessages;

@@ -8,11 +8,6 @@ interface IProps{
   close:() => void;
 
 }
-
-interface IState{
-  
-}
-
 export default function AddPetPopup(props:IProps) {
   const [canClose, setCanClose] = React.useState(true);
   const [ image, setImage ] = React.useState()
@@ -158,13 +153,13 @@ export default function AddPetPopup(props:IProps) {
                 <div className="formImage">
                   <div className="image__inputs">
                     <input className='image__input' onChange={onChangeImageValue} type="text" placeholder='Додати картинку' />
-                    <img className={`imageAdd__Icon ${petImages.length >= 4 ? 'disabledBTN' : ''}`} src={PlusImage} alt="add photo" onClick={handleAddImages}/>
+                    <img className={`imageAdd__Icon ${petImages.length >= 4 ? 'disabledBTN' : ''}`} src={PlusImage} alt="add" onClick={handleAddImages}/>
                   </div>
                   <p className='image__warning'>Макс. - 4</p>
                   <div className="img__list">
                     {
                       petImages.map((images, index) => (
-                          <img className='petImage' key={index} src={images} alt="pet Image" />
+                          <img className='petImage' key={index} src={images} alt="pet" />
                       ))
                     }
                   </div>

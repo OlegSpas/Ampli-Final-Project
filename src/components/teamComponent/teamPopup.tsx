@@ -1,6 +1,5 @@
 import React from 'react';
 import MemberCard from './memberCard';
-import TeamData from '../../fakeData/teamData.json';
 
 
 interface IProps{
@@ -21,7 +20,9 @@ export default function TeamPopup(props:IProps) {
 
   return (
     <div className='teamComponent__popup' onClick={handleClose}>
-        <div className="mainPopup">
+        <div className="mainPopup"  
+          onMouseOver={() => setCanClose( false)} 	
+          onMouseLeave={() => setCanClose(true)}>
           {props.team.map((member, index) => (
             <MemberCard key={index} member={member}/>
           ))}

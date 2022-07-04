@@ -1,7 +1,3 @@
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Icon from '../../images/sidebarIcons/Blog.svg'
-
 interface IProps{
     button:{
 		buttonText: string;

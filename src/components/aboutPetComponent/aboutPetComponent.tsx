@@ -2,7 +2,6 @@ import React from 'react';
 import ImagePetBlog from './imagePetBlock';
 import "react-multi-carousel/lib/styles.css";
 import './aboutPetComponent.scss';
-import { PetCharacteristic } from '../../route/petCharacteristic';
 import AdoptionPopup from '../actionPopups/adoptPopup';
 
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import BlogsData from '../../fakeData/blogsData.json';
 import BlogListItem from './blogListItem';
 import './blogListComponent'
 import { BLOG } from '../../route/Routes';

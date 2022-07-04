@@ -1,5 +1,4 @@
 import React from 'react';
-import BlogData from '../../fakeData/blogListData.json';
 import BlogListItem from './blogListItem';
 import BlogListButtons from './blogListButtons';
 import './blogList.scss';
@@ -11,7 +10,6 @@ interface IProps{
 
 export default function BlogList(props: IProps) {
   const blogs = props.blogs;
-  const [value, setValue] = React.useState('all');
   const [foundBlogs, setFoundBlogs] = React.useState(blogs);
 
   const handleFilter = (buttonValue:any) => {
@@ -41,7 +39,7 @@ export default function BlogList(props: IProps) {
       <section className='BlogList'>
           <div className="container">
               <div className="BlogList__content">
-                <BlogListButtons handleFilter={handleFilter} setFoundBlogs={setFoundBlogs} setValue={setValue}/>
+                <BlogListButtons handleFilter={handleFilter} setFoundBlogs={setFoundBlogs}/>
                 <BlogListSelect handleFilter={handleFilterBySelect}/>
                 <div className="BlogList__list">
                   {foundBlogs.sort((a, b) => a.id < b.id ? 1 : -1).map((blog, index) => (

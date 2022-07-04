@@ -1,12 +1,7 @@
 import React from 'react';
 import PetsListSelectsList from './petsListSelectsList';
-import PetsData from '../../fakeData/petsData.json';
-// import { SelectStates } from '../../route/selectStates';
 import PetsCard from '../homePetsListComponent/homePetsListComponentCard';
-import { Link } from 'react-router-dom';
-import { ADOPTION } from '../../route/Routes';
 import './petsList.scss';
-import { getPets } from '../../axios/pets';
 
 
 interface IProps{
@@ -14,18 +9,15 @@ interface IProps{
 }
 
 export default function PetsList(props:IProps) {
-    // const pets = PetsData.pets;  
 
     // Один обєкт де все є всі стейти
-    const [ pets, setPets ] = React.useState<IPet[]>(props.pets);
+    const pets: IPet[] = props.pets
+    // const [ pets, setPets ] = React.useState<IPet[]>(props.pets);
     const [ petType, setPetType ] = React.useState('');
     const [ petAge, setPetAge ] = React.useState('');
     const [ petSize, setPetSize ] = React.useState('');
     const [ petSex, setPetSex ]  = React.useState('');
     const [ foundPets, setFoundPets ] = React.useState<IPet[]>(props.pets);
-    // const [ state, setState ] = React.useState(SelectStates);
-
-    // console.log(state)
 
 
     const handleFilter = () => {        

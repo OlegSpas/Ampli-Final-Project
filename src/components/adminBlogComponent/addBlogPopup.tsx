@@ -1,6 +1,4 @@
 import React from 'react';
-import { AddPetSelects } from '../../route/addPetSelects';
-import UnknownAvatar from '../../images/unknownAvatar.svg'
 import { BlogButtons } from '../../route/blogButton';
 import { postBlog } from '../../axios/blogs';
 // import TeamAvatarElement from './teamAvatarElemet';

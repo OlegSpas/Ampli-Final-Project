@@ -5,14 +5,11 @@ interface IProps{
     setPetAge: (value:any) => void;
     setPetSize: (value:any) => void;
     setPetSex: (value:any) => void;
-    // handleSelect: (selectValue:any) => void; 
 }
 
 export default function PetsListSelect(props:IProps) {
   
   const valueName = props.select.valueName;
-  const selectState = 'set' + 'Pet' + valueName.charAt(0).toUpperCase() + valueName.slice(1);
-  // console.log(selectState)
 
   const handleChange = (event:any) => {
     const keyword = event.target.value;

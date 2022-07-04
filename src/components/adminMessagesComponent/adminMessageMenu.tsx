@@ -5,7 +5,6 @@ import MenuMessageOption from './menuMessageOption';
 
 
 interface IProps{
-    setValue: (buttonValue:string) => void;
     setMessageList: (foundBlogs:any) => void;
     handleFilter: (buttonValue:any) => void;
     handleFilterBySelect: (buttonValue:any) => void;
@@ -24,7 +23,7 @@ export default function AdminMessageMenu(props: IProps) {
       <>
         <div className='adminMessage__menu'>
           {AdminMessagesRoutes.map((button, index) => (
-              <MenuMessageButton key={index} setActive={() => setActive(index)} isActive={isActiveButtons[index]} handleFilter={props.handleFilter} setValue={props.setValue} button={button}/>
+              <MenuMessageButton key={index} setActive={() => setActive(index)} isActive={isActiveButtons[index]} handleFilter={props.handleFilter} button={button}/>
           ))}
         </div>
         <select onChange={props.handleFilterBySelect} className="adminMessage__select">

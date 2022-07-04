@@ -1,5 +1,4 @@
 import React from 'react';
-import TriggersIcon from '../../images/triggersItem.svg'
 
 interface IProps{
   card: ITriggers;

@@ -4,7 +4,6 @@ import BlogListButton from './blogListButton';
 
 
 interface IProps{
-    setValue: (buttonValue:string) => void;
     setFoundBlogs: (foundBlogs:any) => void;
     handleFilter: (buttonValue:any) => void;
 }
@@ -21,7 +20,7 @@ export default function BlogListButtons(props: IProps) {
   return (
     <div className='BlogList__buttons'>
         {BlogButtons.map((button, index) => (
-            <BlogListButton key={index} setActive={() => setActive(index)} isActive={isActiveButtons[index]} handleFilter={props.handleFilter} setValue={props.setValue} button={button}/>
+            <BlogListButton key={index} setActive={() => setActive(index)} isActive={isActiveButtons[index]} handleFilter={props.handleFilter} button={button}/>
         ))}
     </div>
   )

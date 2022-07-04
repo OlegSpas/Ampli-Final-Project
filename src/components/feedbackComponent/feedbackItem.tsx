@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from '../../images/avatar.jpg'
 
 interface IProps{
     name: string;

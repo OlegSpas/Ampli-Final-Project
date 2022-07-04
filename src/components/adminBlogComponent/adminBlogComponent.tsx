@@ -1,5 +1,4 @@
 import React from "react";
-import BlogData from '../../fakeData/blogListData.json'
 import BlogListItem from "../blogList/blogListItem";
 import AddBlogPopup from "./addBlogPopup";
 import AdminBlogAction from "./adminBlogAction";

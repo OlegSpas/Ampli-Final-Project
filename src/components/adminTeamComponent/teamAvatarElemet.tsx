@@ -1,5 +1,4 @@
 import React from 'react';
-import { AddPetSelects } from '../../route/addPetSelects';
 
 interface IProps{
     avatar:any;

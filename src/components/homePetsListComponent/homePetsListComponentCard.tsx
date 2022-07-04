@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import petDog from '../../images/petDog.jpg'
 import { ADOPTION } from '../../route/Routes';
 // import './homePetsListComponent.scss';
 

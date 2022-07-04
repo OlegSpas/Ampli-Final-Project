@@ -1,6 +1,4 @@
 import React from 'react';
-import { AdminMessagesRoutes } from "../../route/adminMessagesRoute";
-import MenuMessageButton from './menuMessageButton';
 import MessagePopup from './messagePopup';
 
 
@@ -10,14 +8,15 @@ interface IProps{
 
 export default function AdminMessageCard(props: IProps) {
     const shortMessage = props.adminMessage.message.slice(0, 35) + "...";
-    const [ message, setMessage ] = React.useState(props.adminMessage.message);
+    const currentMessage = props.adminMessage.message
+    const [ message, setMessage ] = React.useState(currentMessage);
     const [ isOpenMessagePopup, setOpenMessagePopup ] = React.useState(false);
 
     React.useEffect(() => {
         if(props.adminMessage.message.length > 35){
             setMessage(shortMessage);
         } else{
-            setMessage(props.adminMessage.message);
+            setMessage(currentMessage);
         }
     },[message])
 

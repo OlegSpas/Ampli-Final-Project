@@ -1,6 +1,4 @@
 import React from "react";
-import AdminTeamAction from "./adminTeamAction";
-import Avatar from '../../images/avatar.jpg';
 import './adminTeamComponent.scss';
 
 

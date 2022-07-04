@@ -1,5 +1,3 @@
-import Avatar from '../../images/avatar.jpg';
-import BlogParagraph from './blogParagraph';
 import './blogComponent.scss';
 
 interface IProps{

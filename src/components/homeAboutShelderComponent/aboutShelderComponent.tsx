@@ -4,12 +4,7 @@ import ShelderPhoto from '../../images/shelder.png';
 import { ABOUT } from '../../route/Routes';
 import './aboutShelder.scss';
 
-
-interface IProps{
-
-}
-
-export default function AboutShelderComponent(props:IProps) {
+export default function AboutShelderComponent() {
     const [isAboutPage, setAboutPage] = React.useState(false);
 
     const location = useLocation()
@@ -20,7 +15,7 @@ export default function AboutShelderComponent(props:IProps) {
         }else{
             setAboutPage(false)
         }
-      });
+      },[location.pathname]);
 
   return (
     <div className="AboutShelder">

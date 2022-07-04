@@ -1,6 +1,4 @@
 import React from "react";
-import { AdminMessagesRoutes } from "../../route/adminMessagesRoute";
-import MessageData from '../../fakeData/messagesData.json';
 import AdminMessageMenu from "./adminMessageMenu";
 import './adminMessagesComponent.scss';
 import AdminMessageCard from "./adminMessageCard";
@@ -11,7 +9,6 @@ interface IProps{
 
 export default function MessagesComponent(props:IProps) {
   const messages = props.messages;
-  const [value, setValue] = React.useState('');
   const [messageList, setMessageList] = React.useState(messages);
 
   const handleFilter = (buttonValue:any) => {
@@ -42,7 +39,7 @@ export default function MessagesComponent(props:IProps) {
     <div className="admin__messagesComponent">
       <h2 className="admin__contentTitle">Повідомлення</h2>
       <div className="admin__messageContent">
-        <AdminMessageMenu handleFilterBySelect={handleFilterBySelect} handleFilter={handleFilter} setMessageList={setMessageList} setValue={setValue}/>
+        <AdminMessageMenu handleFilterBySelect={handleFilterBySelect} handleFilter={handleFilter} setMessageList={setMessageList}/>
         <div className="admin__mainMessageContent">
           {messageList.sort((a, b) => a.id < b.id ? 1 : -1).map((adminMessage, index) => (
             <AdminMessageCard key={index} adminMessage={adminMessage} />

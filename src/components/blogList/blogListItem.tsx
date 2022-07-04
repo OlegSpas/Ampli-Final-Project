@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Image from '../../images/helpCardImg.jpg';
 import { BLOG } from '../../route/Routes';
 
 interface IProps{
@@ -20,7 +19,7 @@ export default function BlogListItem(props: IProps) {
     <Link className="blog__link" to={{pathname:`${BLOG}/${props.blog.id}`}}>
       <article className="blog__card">
         <div className="card__media">
-          <img src={props.blog.image} alt="image" />
+          <img src={props.blog.image} alt="media" />
         </div>
         <div className="card__content">
           <h3 className="card__title">

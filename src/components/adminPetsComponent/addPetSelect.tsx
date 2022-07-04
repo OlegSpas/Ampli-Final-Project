@@ -1,13 +1,9 @@
 interface IProps{
     select: IPetSelect;
-    // handleSelect: (selectValue:any) => void; 
     onValueChange: (value:any, type:any) => void;
 }
 
 export default function AddPetSelect(props:IProps) {
-  
-  const valueName = props.select.valueName;
-
 
 
   return (

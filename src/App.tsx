@@ -1,16 +1,14 @@
 import React  from 'react';
-import { Switch, Route, BrowserRouter, useLocation, Redirect } from 'react-router-dom';
-import { HOME, ABOUT, BLOG, ADOPTION, HELP, ADMIN, LOGIN } from './route/Routes';
+import { Switch, Route } from 'react-router-dom';
+import { HOME,ADMIN } from './route/Routes';
 import { getPets } from './axios/pets';
 import AdminPage from './components/adminPage/adminPage';
-import LoginPage from './components/loginPage/loginPage';
-import './App.css';
 import UserRouting from './userRouting';
-import UnknownPage from './components/unknownPage/unknownPage';
 import LoadingPage from './components/loadingPage/loadingPage';
 import { getUsers } from './axios/users';
 import { getMessages } from './axios/messages';
 import { getBlogs } from './axios/blogs';
+import './App.css';
 
 
 
@@ -18,7 +16,6 @@ import { getBlogs } from './axios/blogs';
 
 function App() {
 
-  const [ isLogged, setLogged ] = React.useState(true);
   const [ pets, setPets ] = React.useState<IPet[]>([]);
   const [ team, setTeam ] = React.useState<ITeam[]>([]);
   const [ messages, setMessages ] = React.useState<IMessages[]>([]);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import photo from '../../images/helpCardImg.jpg';
 import { BLOG } from '../../route/Routes';
 import './blogListComponent.scss'
 

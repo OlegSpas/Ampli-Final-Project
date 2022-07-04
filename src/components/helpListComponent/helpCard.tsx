@@ -1,5 +1,4 @@
 import React from 'react';
-import photo from '../../images/helpCardImg.jpg';
 
 interface IProps{
     helpCard: IHelpTypes;

@@ -8,7 +8,7 @@ export default function LoginContent() {
   return (
     <section id="loginPage">
         <div className="container">
-            <img className='loginPage__Image' src={LoginImage} alt="Login Image" />
+            <img className='loginPage__Image' src={LoginImage} alt="Login" />
             <div className="loginPage__content">
                 <h2 className="loginPage__title">
                      Увійти в адмін панель

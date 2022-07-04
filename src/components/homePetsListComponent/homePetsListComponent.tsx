@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PetsData from '../../fakeData/petsData.json';
 import { ADOPTION } from '../../route/Routes';
 import './homePetsListComponent.scss';
 import PetsCard from './homePetsListComponentCard';

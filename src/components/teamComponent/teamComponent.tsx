@@ -1,6 +1,5 @@
 import React from 'react';
 import MemberCard from './memberCard';
-import TeamData from '../../fakeData/teamData.json';
 import './teamComponent.scss';
 import TeamPopup from './teamPopup';
 

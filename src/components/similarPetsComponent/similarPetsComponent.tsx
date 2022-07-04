@@ -1,10 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-import PetsData from '../../fakeData/petsData.json';
 import PetsCard from '../homePetsListComponent/homePetsListComponentCard';
-import { Link } from 'react-router-dom';
-import { ADOPTION } from '../../route/Routes';
-import AboutPageComponent from '../aboutPetComponent/aboutPetComponent';
 import './similarPetsComponent.scss';
 
 
@@ -19,7 +14,7 @@ export default function SimilarPetsComponent(props:IProps) {
     const shuffle = (array:any) => {
         let currentIndex = array.length,  randomIndex;      
         // While there remain elements to shuffle.
-        while (currentIndex != 0) {
+        while (currentIndex !== 0) {
 
       
           // Pick a remaining element.
@@ -35,8 +30,8 @@ export default function SimilarPetsComponent(props:IProps) {
       }
 
       React.useEffect(() => {
-        const pets = props.pets;
-        const filteredPets = new Array;
+        const filteredPets: IPet[] = [];
+        const pets = props.pets
     
         pets.forEach((pet) => {
             const isCurrentPet =  pet.id.toString().includes(props.currentPet.id.toString())
@@ -46,6 +41,7 @@ export default function SimilarPetsComponent(props:IProps) {
           })
         setSimilarPets(shuffle(filteredPets))
       },[props.currentPet])
+
       
   return (
       <section id='similarPets'>

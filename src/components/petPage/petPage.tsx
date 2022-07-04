@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import PetsData from '../../fakeData/petsData.json';
 import AboutPageComponent from '../aboutPetComponent/aboutPetComponent';
 import SimilarPetsComponent from '../similarPetsComponent/similarPetsComponent';
 import UnknownPage from '../unknownPage/unknownPage';

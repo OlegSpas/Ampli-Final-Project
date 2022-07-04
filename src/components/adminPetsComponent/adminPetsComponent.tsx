@@ -1,12 +1,8 @@
 import React from "react";
-import PetsData from '../../fakeData/petsData.json';
 import PetsCard from '../homePetsListComponent/homePetsListComponentCard';
 import AdminPetsAction from "./adminPetsAction";
-import { Link } from 'react-router-dom';
-import { ADOPTION } from '../../route/Routes';
 import './adminPetsComponent.scss';
 import AddPetPopup from "./addPetPopup";
-import { getPets } from '../../axios/pets';
 
 interface IProps{
   pets:IPet[];
@@ -37,9 +33,6 @@ export default function AdminPetsComponent(props:IProps) {
     setOpenAddPetPopup(false);
   }
 
-  React.useEffect(() => {
-    setFoundPets(pets)
-  })
 
   return (
     <div className="admin__petsComponent">

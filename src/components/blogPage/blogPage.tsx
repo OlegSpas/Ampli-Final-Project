@@ -1,7 +1,6 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import BlogComponent from '../blogComponent/blogComponent';
-import BlogData from '../../fakeData/blogListData.json'
 import HeroBlogPage from '../heroBlogPage/heroBlogPage';
 import UnknownPage from '../unknownPage/unknownPage';
 

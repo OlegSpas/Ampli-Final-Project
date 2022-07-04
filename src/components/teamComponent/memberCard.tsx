@@ -1,5 +1,4 @@
 import React from 'react';
-import Avatar from '../../images/avatar.jpg'
 
 interface IProps{
   member: ITeam;

@@ -8,13 +8,14 @@ interface IProps{
 }
 
 export default function ImagePetBlog(props:IProps) {
+    const firstImage = props.images[0].url
 
-    const [ currentImage, setCurrentImage ] = React.useState(props.images[0].url);
+    const [ currentImage, setCurrentImage ] = React.useState(firstImage);
     const [isActiveButtons, setActiveButtons] = React.useState(props.images.map( (_,index) => index === 0 ? true : false));
    
     React.useEffect(() => {
-        setCurrentImage(props.images[0].url);
-    },[props.images[0].url])  
+        setCurrentImage(firstImage);
+    },[firstImage])  
 
     const setActive = (index:number) => {
         const activeButtons = props.images.map( () => false);

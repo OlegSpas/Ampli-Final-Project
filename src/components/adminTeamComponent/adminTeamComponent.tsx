@@ -1,10 +1,8 @@
 import React from "react";
 import AdminTeamAction from "./adminTeamAction";
 import AdminTeamCard from "./adminTeamCard";
-import TeamData from '../../fakeData/teamData.json';
 import './adminTeamComponent.scss';
 import AdminTeamPopup from "./adminTeamPopup";
-import axios from "axios";
 
 
 interface IProps{

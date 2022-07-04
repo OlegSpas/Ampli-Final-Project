@@ -16,7 +16,7 @@ export default function UnknownPage() {
                 <h2 className="page__title">
                     Cторінка не знайдена
                 </h2>
-                <img className='page__image' src={ErrorImage} alt="Error Image" />
+                <img className='page__image' src={ErrorImage} alt="Error" />
             </div>
         </div>
     </section>
