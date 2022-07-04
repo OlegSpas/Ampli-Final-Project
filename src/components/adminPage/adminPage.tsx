@@ -33,7 +33,7 @@ export default function AdminPage(props:IProps) {
         setComponent(<AdminBlogComponent blogs={props.blogs}/>)
         break;  
     }
-  },[content])
+  },[content, props.blogs, props.messages, props.pets, props.team])
 
 
   return (

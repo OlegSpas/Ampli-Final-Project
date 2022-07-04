@@ -18,7 +18,7 @@ export default function AdminMessageCard(props: IProps) {
         } else{
             setMessage(currentMessage);
         }
-    },[message])
+    },[message, currentMessage, props.adminMessage.message.length, shortMessage])
 
     const handleOpenMessagePopup = () => {
         setOpenMessagePopup(true);

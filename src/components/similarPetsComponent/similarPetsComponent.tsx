@@ -10,6 +10,7 @@ interface IProps{
 
 export default function SimilarPetsComponent(props:IProps) {
     const [ similarPets, setSimilarPets ] = React.useState(props.pets);
+    
 
     const shuffle = (array:any) => {
         let currentIndex = array.length,  randomIndex;      
@@ -29,18 +30,19 @@ export default function SimilarPetsComponent(props:IProps) {
         return array;
       }
 
+
+
       React.useEffect(() => {
-        const filteredPets: IPet[] = [];
-        const pets = props.pets
-    
-        pets.forEach((pet) => {
+        const filteredPets: IPet[] = [];    
+        props.pets.forEach((pet) => {
             const isCurrentPet =  pet.id.toString().includes(props.currentPet.id.toString())
             if(isCurrentPet === false){
                 filteredPets.push(pet)
             }
           })
         setSimilarPets(shuffle(filteredPets))
-      },[props.currentPet])
+      },[props.currentPet, props.pets])
+
 
       
   return (
