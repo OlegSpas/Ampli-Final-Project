@@ -1,92 +1,74 @@
 {
     "members":[
         {
-            "id":0,
-            "name":"Василь Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":1,
-            "name":"Петро Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":2,
-            "name":"Іван Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":3,
-            "name":"Любомир Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":4,
-            "name":"Остап Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":5,
-            "name":"Андрій Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":6,
-            "name":"Максим Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":7,
-            "name":"Данило Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":8,
-            "name":"Микола Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":9,
-            "name":"Тарас Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        },
-        {
-            "id":10,
-            "name":"Іван Шевченко",
-            "job":"Директор притулку “Happy Paw”",
-            "image":"image",
-            "phoneNumber":"+380 99 781 9142",
-            "gmail":"vasyl@gmail.com"
-        }
+            "id": 3,
+            "name": "Дмитро Данилів",
+            "phoneNumber": "+380 763856134",
+            "job": "Директор притулку ",
+            "email": "ldsd@gmail.com",
+            "login": "Dima",
+            "password": "123123",
+            "avatar": "https://uplandstudio.ca/wp-content/uploads/2019/11/IW.jpg"
+          },
+          {
+            "id": 4,
+            "name": "Іван Петрович",
+            "phoneNumber": "+ 380 976819142",
+            "job": "Ветеринар",
+            "email": "sd@gmail.com",
+            "login": "Vanya",
+            "password": "123123",
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvV7PmZEa4c7heXjMTbsf2WBXuHz_lS8wURA&usqp=CAU"
+          },
+          {
+            "id": 5,
+            "name": "Петро Горманський",
+            "phoneNumber": "+ 380 97 68 19 142",
+            "job": "Директор Притулку",
+            "email": "petro@gmail.com",
+            "login": "petya",
+            "password": "123123",
+            "avatar": "https://img.freepik.com/free-photo/young-handsome-man-with-beard-isolated-keeping-arms-crossed-frontal-position_1368-132662.jpg?w=2000"
+          },
+          {
+            "id": 7,
+            "name": "Юра Федорович",
+            "phoneNumber": "1111",
+            "job": "Охоронець",
+            "email": "yura@gmail.com",
+            "login": "yura",
+            "password": "123123",
+            "avatar": "https://grantavto.com.ua/files/photos/4/32.jpg"
+          },
+          {
+            "id": 1003,
+            "name": "Микола Івасюк",
+            "phoneNumber": "+ 380 97 681 9142",
+            "job": "Грумер",
+            "email": "nikivsk@gmail.com",
+            "login": "ivsk",
+            "password": "123123",
+            "avatar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ23lSdgL_981pZLqfrUXqMOhXcz42F75e3pw&usqp=CAU"
+          },
+          {
+            "id": 4002,
+            "name": "Юрій Цезар",
+            "phoneNumber": "+ 380976819142",
+            "job": "Кінолог",
+            "email": "cesar@gmail.com",
+            "login": "cesar",
+            "password": "123123",
+            "avatar": "https://rivne1.tv/pics2/1901/i97511.jpg?1546526976"
+          },
+          {
+            "id": 5002,
+            "name": "Данило Глухан",
+            "phoneNumber": "0976819142",
+            "job": "Ветеринар",
+            "email": "asas@gmail.com",
+            "login": "danylo",
+            "password": "123123",
+            "avatar": "https://t4.ftcdn.net/jpg/00/88/53/89/360_F_88538986_5Bi4eJ667pocsO3BIlbN4fHKz8yUFSuA.jpg"
+          }
     ]
 }

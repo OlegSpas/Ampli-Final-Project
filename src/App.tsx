@@ -8,6 +8,10 @@ import LoadingPage from './components/loadingPage/loadingPage';
 import { getUsers } from './axios/users';
 import { getMessages } from './axios/messages';
 import { getBlogs } from './axios/blogs';
+import BlogData from './fakeData/blogsData.json';
+import PetsData from './fakeData/petsData.json';
+import MessagesData from './fakeData/messagesData.json';
+import TeamData from './fakeData/teamData.json';
 import './App.css';
 
 
@@ -40,8 +44,15 @@ function App() {
     ]).finally( () => {
       setLoading(false)
     })
+    if( messages.length === 0 || blogs.length === 0 || team.length === 0 || pets.length === 0){
+      setBlogs(BlogData.blogs);
+      setMessages(MessagesData.messages);
+      setPets(PetsData.pets);
+      setTeam(TeamData.members);
+
+    }
     setLoading(true);
-  },[])
+  },[messages.length, blogs.length, team.length, pets.length])
 
 
   if(isLoading){
